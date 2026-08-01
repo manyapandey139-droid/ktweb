@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KT's Fashion — Website
+
+A premium catalog / showcase website for KT's Fashion (Kanpur, Uttar
+Pradesh). There is no online checkout — every product links to a
+pre-filled WhatsApp message so customers can order directly.
+
+Built with Next.js (App Router), TypeScript, and Tailwind CSS.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Adding Products
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+See [PRODUCT-MANAGEMENT.md](./PRODUCT-MANAGEMENT.md) for a step-by-step,
+beginner-friendly guide to adding, editing, and removing products and
+images — no code knowledge required.
 
-## Learn More
+## Brand Configuration
 
-To learn more about Next.js, take a look at the following resources:
+WhatsApp number, Instagram link, email, and policy text all live in
+[`lib/brandConfig.ts`](./lib/brandConfig.ts).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+app/                    Pages (routes)
+components/             Reusable UI components
+data/                   Product & category catalog (edit these to manage content)
+lib/                    Brand config, WhatsApp link builder, filtering/sorting helpers
+types/                  Shared TypeScript types
+contexts/               Client-side wishlist state
+public/images/          Brand assets & product photos
+```
 
-## Deploy on Vercel
+## Build For Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+npm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploying
+
+This project deploys cleanly to [Vercel](https://vercel.com/new) (recommended,
+same team as Next.js) or any Node.js host that supports Next.js. Just connect
+the repository and deploy — no environment variables are required for the
+current feature set.
