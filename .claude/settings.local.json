@@ -15,7 +15,13 @@
       "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --use-npm)",
       "Bash(npm run *)",
       "Bash(npx eslint *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(curl -sI -m 10 \"https://drive.google.com\")",
+      "Bash(python3 -c \"import requests; print\\(requests.__version__\\)\")",
+      "Bash(curl -sL -o 'C:\\\\Users\\\\mac\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-mac-Desktop-ktweb\\\\2cfc3a4c-2000-4534-8303-033963bde54d\\\\scratchpad/raw/test_DSC00045.jpg' 'https://drive.google.com/uc?export=download&id=1sBdWN_iNuBCjlozJfw6An7rj0sxRE3aC')",
+      "Bash(rm -f \"C:\\\\Users\\\\mac\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-mac-Desktop-ktweb\\\\2cfc3a4c-2000-4534-8303-033963bde54d\\\\scratchpad\\\\raw\\\\test_DSC00045.jpg\")",
+      "Bash(python3 download_all.py)"
     ]
   }
 }
