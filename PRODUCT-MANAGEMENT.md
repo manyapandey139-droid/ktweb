@@ -54,24 +54,29 @@ and paste it as a new entry.
 
 ```ts
 {
-  id: "kt-004",                                 // unique ID, keep the "kt-xxx" pattern
-  slug: "your-product-name-here",               // used in the URL, no spaces — use hyphens
-  name: "Your Product Name",                    // shown on the site
+  id: "indian-wear-03",                         // unique ID — keep it simple, e.g. "<category>-NN"
+  slug: "indian-wear-03",                       // used in the URL, no spaces — use hyphens
+  name: "Indian Wear 03",                       // shown on the site — use a real name once you have one
   category: "indian-wear",                      // one of: indian-wear, indo-western, western-wear, mom-kid
   price: 1999,                                  // price in ₹, numbers only
   images: [
-    "/images/products/indian/kt-004-1.jpg",     // must start with /images/products/...
-    "/images/products/indian/kt-004-2.jpg",     // add as many as you like
+    "/images/products/indian/indian-wear-03-1.jpg",  // must start with /images/products/...
+    "/images/products/indian/indian-wear-03-2.jpg",  // add as many angles as you like
   ],
   description: "A short, honest description of the product.",
-  fabric: "Cotton",                             // optional — remove the line if not needed
+  fabric: "Cotton",                             // optional — omit the line entirely if not known
   sizes: ["S", "M", "L"],                       // optional — only include sizes you actually have
-  colors: ["Blue"],                              // optional — only include colors you actually have
+  colors: ["Blue"],                              // optional — list every color it's actually available in,
+                                                  // e.g. colors: ["Blue", "Beige"] if the same style comes in two colors
   availability: "Available",                    // "Available" | "Limited Stock" | "Out of Stock"
   featured: false,                               // true = shows in "Featured Collection" on the homepage
   newArrival: true,                              // true = shows in "New Arrivals" on the homepage
 },
 ```
+
+Only include `fabric`, `sizes`, and `colors` when you actually know them — leave the
+line out entirely rather than guessing. The site is already built to handle
+products with missing fabric/size/color info gracefully.
 
 **Step 6 — Save the file**
 
@@ -100,6 +105,27 @@ files from `public/images/products/...` if you no longer need them.
 
 In `data/products.ts`, find the product and change the `price` number.
 Save the file.
+
+---
+
+## How To Change A Product's Name
+
+In `data/products.ts`, find the product and change the `name` field (this is
+what customers see). You can leave `id` and `slug` as they are — changing the
+name does not require changing the URL.
+
+---
+
+## How To Change A Product's Category
+
+In `data/products.ts`, find the product and change its `category` field to
+one of: `indian-wear`, `indo-western`, `western-wear`, `mom-kid` (or a custom
+category slug you've added to `data/categories.ts`). The product will
+automatically move to the new category's page and out of the old one. If you
+also want its image to live in the matching folder under
+`public/images/products/...`, move the file there and update the `images`
+paths to match (this step is optional — the site doesn't require the file
+location to match the category).
 
 ---
 
@@ -190,9 +216,25 @@ background, roughly 400–600px wide.
 
 ---
 
-## A Note On The Sample Products
+## A Note On The Current Catalog
 
-The 3 products currently in `data/products.ts` were seeded from real KT's
-Fashion photos so the site works out of the box, but their **prices and
-descriptions are placeholders**. Update them with accurate details before
-sharing the site publicly.
+The 8 products currently in `data/products.ts` were added from real KT's
+Fashion product photography. A few things to know:
+
+- **Every price is a temporary placeholder of ₹1000.** Update the `price`
+  field on each product with the real price whenever you're ready — see
+  "How To Change A Product's Price" above.
+- **Names are temporary** (`Indian Wear 01`, `Western Wear 02`, etc.) since
+  the real product names weren't available. Update the `name` field once you
+  have proper names — see "How To Change A Product's Name" above.
+- **Fabric and sizes are left out** because they couldn't be confirmed from
+  photos alone. Add them once you know the details.
+- A couple of products list two `colors` (e.g. `["Beige", "Blue"]`) because
+  the same style was photographed in two colorways together. If you'd rather
+  list these as fully separate products instead, just copy the product block
+  and split the images/colors between the two copies.
+- Two photos from the shoot (a mother holding her child, both in dark
+  outfits) were **not** turned into a product — the child's outfit didn't
+  look like a specific item being sold, so rather than guess, it was left
+  out. If this is a real Mom & Kid product, let your developer know and it
+  can be added the same way as any other product.

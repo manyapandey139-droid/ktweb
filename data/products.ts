@@ -6,55 +6,155 @@ import { Product } from "@/types/product";
 // This is the ONLY file you need to edit to add, remove, or update products.
 // See PRODUCT-MANAGEMENT.md in the project root for a full step-by-step guide.
 //
-// NOTE: The 3 products below are SAMPLE data seeded from real KT's Fashion
-// photos so you can see the site working end-to-end. Prices and descriptions
-// are placeholders — update them with real details before going live.
+// NOTE: All prices below are TEMPORARY placeholders (₹1000) as requested.
+// Update the `price` field on each product with the real price whenever
+// you're ready — nothing else needs to change.
+//
+// Sizes/fabric are intentionally left out where they could not be confirmed
+// from the product photos. Add them once you have the details.
 // ---------------------------------------------------------------------------
 
 export const products: Product[] = [
   {
-    id: "kt-001",
-    slug: "maroon-sequin-dhoti-gown",
-    name: "Maroon Sequin Dhoti Gown",
-    category: "indo-western",
-    price: 3499, // SAMPLE PRICE — update with the real price
-    images: ["/images/products/indo-western/kt-001-1.jpg"],
+    id: "indian-wear-01",
+    slug: "indian-wear-01",
+    name: "Indian Wear 01",
+    category: "indian-wear",
+    price: 1000,
+    images: [
+      "/images/products/indian/indian-wear-01-1.jpg",
+      "/images/products/indian/indian-wear-01-2.jpg",
+      "/images/products/indian/indian-wear-01-3.jpg",
+      "/images/products/indian/indian-wear-01-4.jpg",
+      "/images/products/indian/indian-wear-01-5.jpg",
+    ],
     description:
-      "A striking fusion gown featuring a sequin-striped bodice and a draped dhoti-style skirt. Finished with a sleek waist belt for a flattering, contemporary silhouette — perfect for festive evenings and celebrations.",
-    fabric: "Georgette with sequin work",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Maroon"],
+      "A sleeveless, mandarin-collar kurta with a front button placket, paired with matching palazzo pants.",
+    colors: ["Beige", "Blue"],
     availability: "Available",
     featured: true,
     newArrival: true,
   },
   {
-    id: "kt-002",
-    slug: "ivory-embroidered-kurti-set",
-    name: "Ivory Embroidered Kurti Set",
+    id: "indian-wear-02",
+    slug: "indian-wear-02",
+    name: "Indian Wear 02",
     category: "indian-wear",
-    price: 1899, // SAMPLE PRICE — update with the real price
-    images: ["/images/products/indian/kt-002-1.jpg"],
+    price: 1000,
+    images: [
+      "/images/products/indian/indian-wear-02-1.jpg",
+      "/images/products/indian/indian-wear-02-2.jpg",
+      "/images/products/indian/indian-wear-02-3.jpg",
+      "/images/products/indian/indian-wear-02-4.jpg",
+      "/images/products/indian/indian-wear-02-5.jpg",
+    ],
     description:
-      "An elegant ivory kurti with delicate thread embroidery, paired with a rich rust tissue dupatta featuring a scalloped, hand-finished border. Timeless and versatile for both everyday wear and special occasions.",
-    fabric: "Muslin cotton, tissue dupatta",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Ivory"],
+      "A long-sleeve kurta with delicate bead embellishment at the yoke and side slits, paired with matching palazzo pants.",
+    colors: ["Black", "Maroon"],
     availability: "Available",
-    featured: true,
+    newArrival: true,
   },
   {
-    id: "kt-003",
-    slug: "pastel-yellow-floral-gown",
-    name: "Pastel Yellow Floral Gown",
-    category: "western-wear",
-    price: 2299, // SAMPLE PRICE — update with the real price
-    images: ["/images/products/western/kt-003-1.jpg"],
+    id: "indo-western-01",
+    slug: "indo-western-01",
+    name: "Indo Western 01",
+    category: "indo-western",
+    price: 1000,
+    images: [
+      "/images/products/indo-western/indo-western-01-1.jpg",
+      "/images/products/indo-western/indo-western-01-2.jpg",
+      "/images/products/indo-western/indo-western-01-3.jpg",
+    ],
     description:
-      "A soft pastel yellow gown with an all-over floral print, one-shoulder ruffle detailing, and a flowing silhouette — designed to make a graceful statement at any evening event.",
-    fabric: "Floral print georgette",
-    sizes: ["S", "M"],
-    colors: ["Yellow"],
+      "A sleeveless printed column dress in a brown and tan pattern with orange stripe trim, styled with a matching draped stole.",
+    colors: ["Brown"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "western-wear-01",
+    slug: "western-wear-01",
+    name: "Western Wear 01",
+    category: "western-wear",
+    price: 1000,
+    images: [
+      "/images/products/western/western-wear-01-1.jpg",
+      "/images/products/western/western-wear-01-2.jpg",
+      "/images/products/western/western-wear-01-3.jpg",
+    ],
+    description:
+      "A long-sleeve mesh crop top, styled here with black wide-leg cargo pants.",
+    colors: ["Brown", "Black"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "western-wear-02",
+    slug: "western-wear-02",
+    name: "Western Wear 02",
+    category: "western-wear",
+    price: 1000,
+    images: [
+      "/images/products/western/western-wear-02-1.jpg",
+      "/images/products/western/western-wear-02-2.jpg",
+      "/images/products/western/western-wear-02-3.jpg",
+    ],
+    description:
+      "A pinstriped V-neck jersey top with a '26 Chicago' graphic, styled here with black cargo pants.",
+    colors: ["Blue", "Cream"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "western-wear-03",
+    slug: "western-wear-03",
+    name: "Western Wear 03",
+    category: "western-wear",
+    price: 1000,
+    images: [
+      "/images/products/western/western-wear-03-1.jpg",
+      "/images/products/western/western-wear-03-2.jpg",
+      "/images/products/western/western-wear-03-3.jpg",
+      "/images/products/western/western-wear-03-4.jpg",
+    ],
+    description:
+      "A two-tone flowy maxi dress with floral appliqué embroidery on the bodice and flared bell sleeves.",
+    colors: ["Green"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "western-wear-04",
+    slug: "western-wear-04",
+    name: "Western Wear 04",
+    category: "western-wear",
+    price: 1000,
+    images: [
+      "/images/products/western/western-wear-04-1.jpg",
+      "/images/products/western/western-wear-04-2.jpg",
+      "/images/products/western/western-wear-04-3.jpg",
+    ],
+    description:
+      "An off-shoulder maxi dress with a floral trim neckline and ruffled sleeves.",
+    colors: ["White"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "western-wear-05",
+    slug: "western-wear-05",
+    name: "Western Wear 05",
+    category: "western-wear",
+    price: 1000,
+    images: [
+      "/images/products/western/western-wear-05-1.jpg",
+      "/images/products/western/western-wear-05-2.jpg",
+      "/images/products/western/western-wear-05-3.jpg",
+    ],
+    description:
+      "An off-shoulder striped maxi dress with puff sleeves and a tiered skirt.",
+    colors: ["Red", "White"],
     availability: "Available",
     newArrival: true,
   },
