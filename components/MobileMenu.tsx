@@ -28,7 +28,9 @@ export default function MobileMenu({
 
   return (
     <div
-      className={`fixed inset-0 z-50 lg:hidden transition-opacity duration-300 ${
+      // overflow-hidden clips the closed drawer, which sits off-screen at
+      // translate-x-full — without it the page gains horizontal scroll.
+      className={`fixed inset-0 z-50 lg:hidden overflow-hidden transition-opacity duration-300 ${
         open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       }`}
       role="dialog"

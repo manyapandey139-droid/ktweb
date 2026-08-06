@@ -139,6 +139,29 @@ location to match the category).
 
 ---
 
+## How To Add Multiple Images To One Product (Photo Gallery)
+
+If you have several photos of the **same** garment — front, side, back,
+close-up, or a shot with more than one model — they should all go on **one**
+product, not become separate products.
+
+Put every photo in the same `images` array, best photo first:
+
+```ts
+images: [
+  "/images/products/indian/indian-wear-03-1.jpg",   // shown on the product card
+  "/images/products/indian/indian-wear-03-2.jpg",   // side view
+  "/images/products/indian/indian-wear-03-3.jpg",   // back view
+  "/images/products/indian/indian-wear-03-4.jpg",   // close-up
+],
+```
+
+The product page automatically shows small thumbnails under the main photo,
+and clicking one swaps the large image. There's no limit on how many you add.
+A product with only one photo simply shows no thumbnails — that's fine too.
+
+---
+
 ## How To Mark A Product As Featured
 
 Set `featured: true` on that product in `data/products.ts`. It will now
@@ -218,8 +241,10 @@ background, roughly 400–600px wide.
 
 ## A Note On The Current Catalog
 
-The 8 products currently in `data/products.ts` were added from real KT's
-Fashion product photography. A few things to know:
+The **20 products** currently in `data/products.ts` were added from real KT's
+Fashion product photography (8 from the first photo set, 12 from the later
+"ktimages" set). Current split: 9 Indian Wear, 3 Indo Western, 8 Western
+Wear, 0 Mom & Kid. A few things to know:
 
 - **Every price is a temporary placeholder of ₹1000.** Update the `price`
   field on each product with the real price whenever you're ready — see
@@ -233,8 +258,23 @@ Fashion product photography. A few things to know:
   the same style was photographed in two colorways together. If you'd rather
   list these as fully separate products instead, just copy the product block
   and split the images/colors between the two copies.
-- Two photos from the shoot (a mother holding her child, both in dark
-  outfits) were **not** turned into a product — the child's outfit didn't
-  look like a specific item being sold, so rather than guess, it was left
-  out. If this is a real Mom & Kid product, let your developer know and it
-  can be added the same way as any other product.
+- **`availability` is set to `"Available"` on every product.** This field is
+  required, so it had to be given a value — it is not a confirmed stock
+  check. Change any item to `"Limited Stock"` or `"Out of Stock"` as needed.
+- **Mom & Kid Twinning has no products yet** and still shows "Coming Soon".
+  Two photos from the first shoot (a mother holding her child) were not made
+  into a product because the child's outfit didn't look like a specific item
+  being sold. Send matching mom-and-child photos and they can be added like
+  any other product.
+- Some garments were photographed only alongside other models and never on
+  their own. Where that happened, the group photo is used as the product
+  image. If you have solo photos of these, replacing the images will make
+  those product cards much clearer:
+  - `Indian Wear 06` (green bandhani-print kurta) — group photos only.
+  - A **beige/tan colour-block sweater** appears next to the yellow one in
+    `Western Wear 06`'s photos but has no photo of its own, so it was not
+    made into a separate product.
+  - A **teal striped** version of `Indian Wear 09` appears in one photo. It
+    looks like the same style in another colour; it was not split into its
+    own product. Add it as a separate product, or add `"Teal"` to that
+    product's `colors`, once you confirm.
