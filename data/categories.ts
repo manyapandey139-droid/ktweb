@@ -10,14 +10,14 @@ export const categories: CategoryInfo[] = [
     title: "Cord Set",
     navLabel: "Cord Set",
     shortDescription: "Perfectly matched top and bottom sets.",
-    image: "/images/products/indo-western/golden-paisley-co-ord-set-front.jpg",
+    image: "/images/products/indo-western/image.png",
   },
   {
     slug: "ethnic-suit",
     title: "Ethnic Suit",
     navLabel: "Ethnic Suit",
     shortDescription: "Kurta sets, shararas, anarkalis and timeless drapes.",
-    image: "/images/products/indian/ivory-mirror-anarkali-set-front.jpg",
+    image: "/images/products/indian/image.png",
   },
   {
     slug: "bodycon-dress",

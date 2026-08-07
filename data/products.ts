@@ -38,7 +38,7 @@ export const products: Product[] = [
     id: "peacock-mirror-pleated-kurta-set",
     slug: "peacock-mirror-pleated-kurta-set",
     name: "Peacock Mirror Pleated Kurta Set",
-    category: "ethnic-suit",
+    category: "cocktail-dress",
     price: 2500,
     images: [
       "/images/products/indian/peacock-mirror-pleated-kurta-set-front.jpg",
@@ -425,7 +425,7 @@ export const products: Product[] = [
     id: "rose-quartz-halter-set",
     slug: "rose-quartz-halter-set",
     name: "Rose Quartz Halter Set",
-    category: "cord-set",
+    category:"cocktail-dress",
     price: 1000,
     images: [
       "/images/products/indo-western/rose-quartz-halter-set-front.jpg",
@@ -593,7 +593,7 @@ export const products: Product[] = [
     id: "starlit-noir-tulle-gown",
     slug: "starlit-noir-tulle-gown",
     name: "Starlit Noir Tulle Gown",
-    category: "gown",
+    category: "bodycon-dress",
     price: 2000,
     images: [
       "/images/products/western/starlit-noir-tulle-gown-front.jpg",
