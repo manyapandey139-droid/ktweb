@@ -18,10 +18,12 @@ public/images/products/
 
 Pick the folder that matches the product's category:
 
-- `indian/` — Indian Wear
-- `indo-western/` — Indo Western
-- `western/` — Western Wear
-- `mom-kid/` — Mom & Kid Twinning
+- `indian/`, `indo-western/`, `western/`, `mom-kid/`
+
+These folder names are historical — they are just storage locations on disk
+and are **not** the website's categories. A product's category is set by its
+`category` field in `data/products.ts`, not by which folder its photos sit in.
+Put new photos in whichever folder is most convenient.
 
 **Step 2 — Add your photo(s)**
 
@@ -29,9 +31,14 @@ Drop your product photo(s) into that folder. Use a clear, unique file name,
 for example:
 
 ```
-kt-004-1.jpg
-kt-004-2.jpg
+royal-lavender-suit-set-front.jpg
+royal-lavender-suit-set-view-02.jpg
+royal-lavender-suit-set-detail.jpg
 ```
+
+Name files after the product itself, not a code. The convention used across
+the catalog is `<product-slug>-front.jpg` for the main photo, then
+`-view-02`, `-view-03` … for other angles and `-detail` for close-ups.
 
 Tip: photos that are roughly portrait-shaped (3:4, like 900×1200px) look
 best in the product cards and gallery. Keep file sizes reasonable
@@ -54,14 +61,16 @@ and paste it as a new entry.
 
 ```ts
 {
-  id: "indian-wear-03",                         // unique ID — keep it simple, e.g. "<category>-NN"
-  slug: "indian-wear-03",                       // used in the URL, no spaces — use hyphens
-  name: "Indian Wear 03",                       // shown on the site — use a real name once you have one
-  category: "indian-wear",                      // one of: indian-wear, indo-western, western-wear, mom-kid
+  id: "royal-lavender-suit-set",                // unique ID — use the slug, keeps things readable
+  slug: "royal-lavender-suit-set",              // the URL: /product/royal-lavender-suit-set
+  name: "Royal Lavender Suit Set",              // the boutique-style name customers see
+  category: "ethnic-suit",                      // one of: cord-set, ethnic-suit, bodycon-dress,
+                                                //         gown, cocktail-dress,
+                                                //         gym-fitness-outfits, mom-daughter
   price: 1999,                                  // price in ₹, numbers only
   images: [
-    "/images/products/indian/indian-wear-03-1.jpg",  // must start with /images/products/...
-    "/images/products/indian/indian-wear-03-2.jpg",  // add as many angles as you like
+    "/images/products/indian/royal-lavender-suit-set-front.jpg",     // must start with /images/products/...
+    "/images/products/indian/royal-lavender-suit-set-view-02.jpg",   // add as many angles as you like
   ],
   description: "A short, honest description of the product.",
   fabric: "Cotton",                             // optional — omit the line entirely if not known
@@ -83,7 +92,7 @@ products with missing fabric/size/color info gracefully.
 That's it. The product will automatically appear in:
 
 - The Shop page (`/shop`)
-- Its category page (e.g. `/indian-wear`)
+- Its category page (e.g. `/ethnic-suit`)
 - The homepage (if `featured` or `newArrival` is `true`)
 - Its own product page (`/product/your-product-name-here`)
 - The sitemap
@@ -119,8 +128,9 @@ name does not require changing the URL.
 ## How To Change A Product's Category
 
 In `data/products.ts`, find the product and change its `category` field to
-one of: `indian-wear`, `indo-western`, `western-wear`, `mom-kid` (or a custom
-category slug you've added to `data/categories.ts`). The product will
+one of: `cord-set`, `ethnic-suit`, `bodycon-dress`, `gown`, `cocktail-dress`,
+`gym-fitness-outfits`, `mom-daughter` (or a custom category slug you've added
+to `data/categories.ts`). The product will
 automatically move to the new category's page and out of the old one. If you
 also want its image to live in the matching folder under
 `public/images/products/...`, move the file there and update the `images`
@@ -149,10 +159,10 @@ Put every photo in the same `images` array, best photo first:
 
 ```ts
 images: [
-  "/images/products/indian/indian-wear-03-1.jpg",   // shown on the product card
-  "/images/products/indian/indian-wear-03-2.jpg",   // side view
-  "/images/products/indian/indian-wear-03-3.jpg",   // back view
-  "/images/products/indian/indian-wear-03-4.jpg",   // close-up
+  "/images/products/indian/royal-lavender-suit-set-front.jpg",     // shown on the product card
+  "/images/products/indian/royal-lavender-suit-set-view-02.jpg",   // another angle
+  "/images/products/indian/royal-lavender-suit-set-view-03.jpg",   // back view
+  "/images/products/indian/royal-lavender-suit-set-detail.jpg",    // close-up
 ],
 ```
 
@@ -241,40 +251,34 @@ background, roughly 400–600px wide.
 
 ## A Note On The Current Catalog
 
-The **20 products** currently in `data/products.ts` were added from real KT's
-Fashion product photography (8 from the first photo set, 12 from the later
-"ktimages" set). Current split: 9 Indian Wear, 3 Indo Western, 8 Western
-Wear, 0 Mom & Kid. A few things to know:
+The **41 products** in `data/products.ts` were built from real KT's Fashion
+product photography across three shoots. Current split: **18 Ethnic Suit,
+10 Cord Set, 7 Gown, 2 Bodycon Dress, 2 Cocktail Dress, 2 Gym Fitness
+Outfits, 0 Mom & Daughter**. A few things to know:
 
 - **Every price is a temporary placeholder of ₹1000.** Update the `price`
   field on each product with the real price whenever you're ready — see
   "How To Change A Product's Price" above.
-- **Names are temporary** (`Indian Wear 01`, `Western Wear 02`, etc.) since
-  the real product names weren't available. Update the `name` field once you
-  have proper names — see "How To Change A Product's Name" above.
+- **Names and descriptions were written from the photographs.** They describe
+  what is visible (cut, print, styling) and are meant to sell — feel free to
+  reword any of them to match how you actually describe the piece in store.
 - **Fabric and sizes are left out** because they couldn't be confirmed from
   photos alone. Add them once you know the details.
-- A couple of products list two `colors` (e.g. `["Beige", "Blue"]`) because
-  the same style was photographed in two colorways together. If you'd rather
-  list these as fully separate products instead, just copy the product block
-  and split the images/colors between the two copies.
+- Some products list two `colors` (e.g. `["Beige", "Blue"]`) because the same
+  style was photographed in two colourways. If you'd rather sell those as
+  separate listings, copy the product block and split the images and colours
+  between the two copies.
 - **`availability` is set to `"Available"` on every product.** This field is
   required, so it had to be given a value — it is not a confirmed stock
   check. Change any item to `"Limited Stock"` or `"Out of Stock"` as needed.
-- **Mom & Kid Twinning has no products yet** and still shows "Coming Soon".
-  Two photos from the first shoot (a mother holding her child) were not made
-  into a product because the child's outfit didn't look like a specific item
-  being sold. Send matching mom-and-child photos and they can be added like
-  any other product.
-- Some garments were photographed only alongside other models and never on
-  their own. Where that happened, the group photo is used as the product
-  image. If you have solo photos of these, replacing the images will make
-  those product cards much clearer:
-  - `Indian Wear 06` (green bandhani-print kurta) — group photos only.
-  - A **beige/tan colour-block sweater** appears next to the yellow one in
-    `Western Wear 06`'s photos but has no photo of its own, so it was not
-    made into a separate product.
-  - A **teal striped** version of `Indian Wear 09` appears in one photo. It
-    looks like the same style in another colour; it was not split into its
-    own product. Add it as a separate product, or add `"Teal"` to that
-    product's `colors`, once you confirm.
+- **Mom & Daughter has no products yet** and still shows "Coming Soon".
+  Send matching mom-and-child photos and they can be added like any other
+  product.
+- A few garments were only ever photographed alongside another model, so the
+  group photo is used as the product image. Solo photos would make these
+  cards clearer: `Fern Bandhani Kurta Set`, `Crimson Tie-Dye Kurta Set`,
+  `Heritage Thread Kurti Set` and `Ivory Bloom Kurti & Palazzo`.
+- Two garments appear only in the background of another product's photos and
+  were **not** turned into their own listings: a beige/tan colour-block
+  sweater (seen beside `Sunlit Colourblock Knit`) and a teal striped version
+  of `Amethyst Leheriya Lehenga`. Send solo photos if you want either listed.

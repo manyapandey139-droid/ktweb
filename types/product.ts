@@ -1,8 +1,11 @@
 export type ProductCategory =
-  | "indian-wear"
-  | "indo-western"
-  | "western-wear"
-  | "mom-kid";
+  | "cord-set"
+  | "ethnic-suit"
+  | "bodycon-dress"
+  | "gown"
+  | "cocktail-dress"
+  | "gym-fitness-outfits"
+  | "mom-daughter";
 
 export type Availability = "Available" | "Limited Stock" | "Out of Stock";
 

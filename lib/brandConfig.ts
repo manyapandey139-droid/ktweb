@@ -31,7 +31,7 @@ export const brandConfig = {
   seo: {
     defaultTitle: "KT's Fashion | Feeling Beautiful",
     defaultDescription:
-      "KT's Fashion is a women's fashion brand from Kanpur, Uttar Pradesh, offering elegant Indian, Indo Western and Western wear with Pan India delivery and easy WhatsApp ordering.",
+      "KT's Fashion is a women's fashion brand from Kanpur, Uttar Pradesh, offering elegant ethnic suits, cord sets, gowns and party dresses with Pan India delivery and easy WhatsApp ordering.",
     siteUrl: "https://www.ktsfashion.in", // update once a real domain is live
   },
 } as const;

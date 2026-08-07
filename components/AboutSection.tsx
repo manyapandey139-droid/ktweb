@@ -25,7 +25,7 @@ export default function AboutSection() {
           </h2>
           <p className="text-ink/70 text-sm sm:text-base mb-4 leading-relaxed">
             For nearly two years, {brandConfig.brandName} has been curating
-            Indian, Indo Western and Western styles from{" "}
+            ethnic suits, cord sets, gowns and party dresses from{" "}
             {brandConfig.location.display} — designed to help every woman feel
             confident, elegant and comfortable in what she wears.
           </p>

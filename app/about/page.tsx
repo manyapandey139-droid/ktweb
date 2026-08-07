@@ -7,7 +7,7 @@ import { getGeneralEnquiryUrl } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about KT's Fashion, a women-led fashion brand from Kanpur, Uttar Pradesh, bringing together Indian, Indo Western and Western styles.",
+    "Learn about KT's Fashion, a women-led fashion brand from Kanpur, Uttar Pradesh, bringing together ethnic suits, cord sets, gowns and party dresses.",
 };
 
 export default function AboutPage() {
@@ -42,8 +42,8 @@ export default function AboutPage() {
           </p>
           <p className="text-ink/70 text-sm sm:text-base leading-relaxed mb-5">
             Based in {brandConfig.location.display}, we have spent the last
-            couple of years bringing together Indian, Indo Western and
-            Western styles — carefully choosing pieces that help women feel
+            couple of years bringing together ethnic suits, cord sets, gowns
+            and party dresses — carefully choosing pieces that help women feel
             elegant, confident and comfortable, whatever the occasion.
           </p>
           <p className="text-ink/70 text-sm sm:text-base leading-relaxed mb-5">

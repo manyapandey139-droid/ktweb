@@ -9,7 +9,7 @@ import { filterAndSortProducts, getAvailableSizes } from "@/lib/filterProducts";
 export const metadata: Metadata = {
   title: "Shop All Collections",
   description:
-    "Browse the full KT's Fashion catalog — Indian, Indo Western and Western wear, with easy WhatsApp ordering.",
+    "Browse the full KT's Fashion catalog — cord sets, ethnic suits, bodycon dresses, gowns and cocktail dresses, with easy WhatsApp ordering.",
 };
 
 export default async function ShopPage({
