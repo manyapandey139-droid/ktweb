@@ -109,7 +109,7 @@ export const products: Product[] = [
     id: "emerald-shimmer-lehenga",
     slug: "emerald-shimmer-lehenga",
     name: "Emerald Shimmer Lehenga",
-    category: "ethnic-suit",
+    category: "cocktail-dress",
     price: 2500,
     images: [
       "/images/products/indian/emerald-shimmer-lehenga-front.jpg",
@@ -125,7 +125,7 @@ export const products: Product[] = [
     id: "blush-petal-drape-set",
     slug: "blush-petal-drape-set",
     name: "Blush Petal Drape Set",
-    category: "ethnic-suit",
+    category: "cocktail-dress",
     price: 2500,
     images: [
       "/images/products/indian/blush-petal-drape-set-front.jpg",
@@ -142,7 +142,7 @@ export const products: Product[] = [
     id: "amethyst-leheriya-lehenga",
     slug: "amethyst-leheriya-lehenga",
     name: "Amethyst Leheriya Lehenga",
-    category: "ethnic-suit",
+    category: "cocktail-dress",
     price: 1800,
     images: [
       "/images/products/indian/amethyst-leheriya-lehenga-front.jpg",
@@ -391,7 +391,7 @@ export const products: Product[] = [
     id: "ivory-bloom-kurti-palazzo",
     slug: "ivory-bloom-kurti-palazzo",
     name: "Ivory Bloom Kurti & Palazzo",
-    category: "ethnic-suit",
+    category: "cord-set",
     price: 1000,
     images: [
       "/images/products/indo-western/ivory-bloom-kurti-palazzo-front.jpg",
@@ -409,7 +409,7 @@ export const products: Product[] = [
     id: "cocoa-stripe-kurti-set",
     slug: "cocoa-stripe-kurti-set",
     name: "Cocoa Stripe Kurti Set",
-    category: "ethnic-suit",
+    category: "cord-set",
     price: 1700,
     images: [
       "/images/products/indo-western/cocoa-stripe-kurti-set-front.jpg",
