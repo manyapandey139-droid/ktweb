@@ -45,7 +45,7 @@ export const categories: CategoryInfo[] = [
     title: "Gym Fitness Outfits",
     navLabel: "Gym Fitness Outfits",
     shortDescription: "Easy, active pieces for a life on the move.",
-    image: "/images/products/western/varsity-stripe-jersey-tee-front.jpg",
+    image: "/images/products/western/noir-mesh-crop-top-front.jpg",
   },
   {
     slug: "mom-daughter",
