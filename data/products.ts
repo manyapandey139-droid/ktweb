@@ -36,25 +36,6 @@ export const products: Product[] = [
     newArrival: true,
   },
   {
-    id: "indian-wear-02",
-    slug: "indian-wear-02",
-    name: "Indian Wear 02",
-    category: "indian-wear",
-    price: 1000,
-    images: [
-      "/images/products/indian/indian-wear-02-1.jpg",
-      "/images/products/indian/indian-wear-02-2.jpg",
-      "/images/products/indian/indian-wear-02-3.jpg",
-      "/images/products/indian/indian-wear-02-4.jpg",
-      "/images/products/indian/indian-wear-02-5.jpg",
-    ],
-    description:
-      "A long-sleeve kurta with delicate bead embellishment at the yoke and side slits, paired with matching palazzo pants.",
-    colors: ["Black", "Maroon"],
-    availability: "Available",
-    newArrival: true,
-  },
-  {
     id: "indo-western-01",
     slug: "indo-western-01",
     name: "Indo Western 01",
