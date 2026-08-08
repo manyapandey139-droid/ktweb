@@ -27,7 +27,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-5xl px-4 sm:px-6 py-16 sm:py-20 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         <div className="relative aspect-[4/5] max-w-md w-full mx-auto md:mx-0 overflow-hidden order-2 md:order-1">
           <Image
-            src="/images/products/indo-western/kt-001-1.jpg"
+            src="/images/products/western/ivory-petal-off-shoulder-gown-front.jpg"
             alt={`${brandConfig.brandName} — women's fashion styled with elegance`}
             fill
             sizes="(min-width: 768px) 40vw, 90vw"
