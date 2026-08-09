@@ -721,6 +721,113 @@ export const products: Product[] = [
     availability: "Available",
     newArrival: true,
   },
+  {
+    id: "midnight-bloom-embroidered-suit-set",
+    slug: "midnight-bloom-embroidered-suit-set",
+    name: "Midnight Bloom Embroidered Suit Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/midnight-bloom-embroidered-suit-set-front.jpg",
+      "/images/products/indian/midnight-bloom-embroidered-suit-set-view-02.jpg",
+      "/images/products/indian/midnight-bloom-embroidered-suit-set-view-03.jpg",
+      "/images/products/indian/midnight-bloom-embroidered-suit-set-view-04.jpg",
+      "/images/products/indian/midnight-bloom-embroidered-suit-set-view-05.jpg",
+      "/images/products/indian/midnight-bloom-embroidered-suit-set-view-06.jpg",
+    ],
+    description:
+      "Deep black sets the stage for a cascade of pink and ivory floral embroidery, running from the yoke down to the hem. A matching embroidered dupatta with a bordered finish completes the look. Striking yet graceful, this suit set is a beautiful pick for festive evenings and family celebrations.",
+    colors: ["Black", "Pink"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "pearl-blossom-embroidered-suit-set",
+    slug: "pearl-blossom-embroidered-suit-set",
+    name: "Pearl Blossom Embroidered Suit Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/pearl-blossom-embroidered-suit-set-front.jpg",
+      "/images/products/indian/pearl-blossom-embroidered-suit-set-view-02.jpg",
+      "/images/products/indian/pearl-blossom-embroidered-suit-set-view-03.jpg",
+      "/images/products/indian/pearl-blossom-embroidered-suit-set-view-04.jpg",
+    ],
+    description:
+      "Soft ivory brought to life with delicate pink floral embroidery scattered across the kurta and dupatta. The straight silhouette falls cleanly over matching wide-leg trousers for a look that feels fresh and quietly elegant. A lovely choice for daytime gatherings, festive mornings and occasions that call for understated charm.",
+    colors: ["White", "Pink"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "vermilion-chevron-sharara-set",
+    slug: "vermilion-chevron-sharara-set",
+    name: "Vermilion Chevron Sharara Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/vermilion-chevron-sharara-set-front.jpg",
+      "/images/products/indian/vermilion-chevron-sharara-set-view-02.jpg",
+      "/images/products/indian/vermilion-chevron-sharara-set-view-03.jpg",
+      "/images/products/indian/vermilion-chevron-sharara-set-view-04.jpg",
+    ],
+    description:
+      "A bold chevron print in vermilion and ivory defines this striking kurta, paired with a flowing sharara and a soft matching dupatta. The graphic pattern brings a modern edge to a classic festive silhouette. A confident choice for celebrations, family functions and daytime festivities.",
+    colors: ["Red", "White"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "sunset-bandhani-sharara-set",
+    slug: "sunset-bandhani-sharara-set",
+    name: "Sunset Bandhani Sharara Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/sunset-bandhani-sharara-set-front.jpg",
+    ],
+    description:
+      "Warm sunset orange runs through this bandhani-print kurta and its matching sharara, creating a look that glows from every angle. The relaxed silhouette moves easily while the traditional print keeps it rooted in festive charm. Perfect for daytime celebrations, poojas and joyful family gatherings.",
+    colors: ["Orange"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "emerald-rose-bandhani-suit-set",
+    slug: "emerald-rose-bandhani-suit-set",
+    name: "Emerald Rose Bandhani Suit Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/emerald-rose-bandhani-suit-set-front.jpg",
+      "/images/products/indian/emerald-rose-bandhani-suit-set-view-02.jpg",
+      "/images/products/indian/emerald-rose-bandhani-suit-set-view-03.jpg",
+    ],
+    description:
+      "Emerald green meets vivid rose-pink bandhani in this beautifully contrasted suit set. The printed dupatta and coordinating bottoms bring bold colour play to a classic festive silhouette. Eye-catching and full of character, it is a striking pick for celebrations, festive outings and occasions that call for colour.",
+    colors: ["Green", "Pink"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "amber-rose-bandhani-suit-set",
+    slug: "amber-rose-bandhani-suit-set",
+    name: "Amber Rose Bandhani Suit Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/amber-rose-bandhani-suit-set-front.jpg",
+      "/images/products/indian/amber-rose-bandhani-suit-set-view-02.jpg",
+      "/images/products/indian/amber-rose-bandhani-suit-set-view-03.jpg",
+    ],
+    description:
+      "Rose pink pairs with sunlit amber bandhani in this joyful suit set, finished with a richly toned dupatta. The bright colour blocking and traditional print create a look that feels festive and full of life. A radiant choice for daytime functions, poojas and celebrations with family.",
+    colors: ["Pink", "Yellow"],
+    availability: "Available",
+    newArrival: true,
+  },
 ];
 
 export function getAllProducts(): Product[] {
