@@ -726,7 +726,7 @@ export const products: Product[] = [
     slug: "midnight-bloom-embroidered-suit-set",
     name: "Midnight Bloom Embroidered Suit Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1200,
     images: [
       "/images/products/indian/midnight-bloom-embroidered-suit-set-front.jpg",
       "/images/products/indian/midnight-bloom-embroidered-suit-set-view-02.jpg",
@@ -765,7 +765,7 @@ export const products: Product[] = [
     slug: "vermilion-chevron-sharara-set",
     name: "Vermilion Chevron Sharara Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1200,
     images: [
       "/images/products/indian/vermilion-chevron-sharara-set-front.jpg",
       "/images/products/indian/vermilion-chevron-sharara-set-view-02.jpg",
@@ -783,7 +783,7 @@ export const products: Product[] = [
     slug: "sunset-bandhani-sharara-set",
     name: "Sunset Bandhani Sharara Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1200,
     images: [
       "/images/products/indian/sunset-bandhani-sharara-set-front.jpg",
     ],
@@ -816,7 +816,7 @@ export const products: Product[] = [
     slug: "amber-rose-bandhani-suit-set",
     name: "Amber Rose Bandhani Suit Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1200,
     images: [
       "/images/products/indian/amber-rose-bandhani-suit-set-front.jpg",
       "/images/products/indian/amber-rose-bandhani-suit-set-view-02.jpg",
