@@ -798,7 +798,7 @@ export const products: Product[] = [
     slug: "emerald-rose-bandhani-suit-set",
     name: "Emerald Rose Bandhani Suit Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1200,
     images: [
       "/images/products/indian/emerald-rose-bandhani-suit-set-front.jpg",
       "/images/products/indian/emerald-rose-bandhani-suit-set-view-02.jpg",
