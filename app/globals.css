@@ -71,6 +71,61 @@ body {
   animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+/* ---- Sawan Sale campaign ------------------------------------------------ */
+
+/* Fine rain streaks drifting down the banner */
+@keyframes sawan-rain {
+  0% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(420%);
+    opacity: 0;
+  }
+}
+
+.animate-sawan-rain {
+  animation-name: sawan-rain;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Popup entrance */
+@keyframes sawan-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-sawan-pop-in {
+  animation: sawan-pop-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes sawan-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-sawan-fade-in {
+  animation: sawan-fade-in 0.3s ease-out both;
+}
+
 /* Focus visibility for accessibility */
 a:focus-visible,
 button:focus-visible,

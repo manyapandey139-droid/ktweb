@@ -8,8 +8,11 @@ import EditorialBanner from "@/components/EditorialBanner";
 import WhySection from "@/components/WhySection";
 import InstagramSection from "@/components/InstagramSection";
 import WhatsAppCTASection from "@/components/WhatsAppCTASection";
+import SawanSaleBanner from "@/components/SawanSaleBanner";
+import SawanSaleSection from "@/components/SawanSaleSection";
 import { categories } from "@/data/categories";
 import { getFeaturedProducts, getNewArrivals } from "@/data/products";
+import { sawanSale } from "@/data/sawanSale";
 
 export default function Home() {
   const featured = getFeaturedProducts();
@@ -18,6 +21,8 @@ export default function Home() {
   return (
     <>
       <Hero />
+
+      {sawanSale.isLive && <SawanSaleBanner />}
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
         <SectionHeading
@@ -65,6 +70,8 @@ export default function Home() {
           <ProductGrid products={newArrivals} />
         </section>
       )}
+
+      {sawanSale.isLive && <SawanSaleSection />}
 
       <AboutSection />
       <EditorialBanner />
