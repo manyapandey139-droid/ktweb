@@ -726,7 +726,7 @@ export const products: Product[] = [
     slug: "midnight-bloom-embroidered-suit-set",
     name: "Midnight Bloom Embroidered Suit Set",
     category: "ethnic-suit",
-    price: 1200,
+    price: 1800,
     images: [
       "/images/products/indian/midnight-bloom-embroidered-suit-set-front.jpg",
       "/images/products/indian/midnight-bloom-embroidered-suit-set-view-02.jpg",
@@ -747,7 +747,7 @@ export const products: Product[] = [
     slug: "pearl-blossom-embroidered-suit-set",
     name: "Pearl Blossom Embroidered Suit Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1800,
     images: [
       "/images/products/indian/pearl-blossom-embroidered-suit-set-front.jpg",
       "/images/products/indian/pearl-blossom-embroidered-suit-set-view-02.jpg",

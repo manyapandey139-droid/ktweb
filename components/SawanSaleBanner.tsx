@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { sawanSale, getSawanBannerProducts } from "@/data/sawanSale";
+import { sawanSale, getSawanBannerFigures } from "@/data/sawanSale";
 import { SawanRain, SawanLeaf } from "@/components/SawanDecor";
 
 /**
@@ -21,11 +21,9 @@ import { SawanRain, SawanLeaf } from "@/components/SawanDecor";
  * already used elsewhere on the site, so the campaign reads as KT's Fashion.
  */
 export default function SawanSaleBanner() {
-  const [centre, left, right] = getSawanBannerProducts();
-  if (!centre) return null;
-
-  // Ordered left → centre → right for the on-screen composition.
-  const figures = [left, centre, right].filter(Boolean);
+  // Already ordered left → centre → right for the on-screen composition.
+  const figures = getSawanBannerFigures();
+  if (figures.length === 0) return null;
 
   return (
     <section
@@ -91,40 +89,37 @@ export default function SawanSaleBanner() {
 
         {/* ---------------- Composition ---------------- */}
         <div className="grid grid-cols-3 items-end gap-2.5 sm:gap-4 lg:gap-5">
-          {figures.map((product) => {
-            const isCentre = product!.slug === centre.slug;
-            return (
-              <Link
-                key={product!.slug}
-                href={`/product/${product!.slug}`}
-                className="group relative block"
+          {figures.map(({ product, isCentre }) => (
+            <Link
+              key={product.slug}
+              href={`/product/${product.slug}`}
+              className="group relative block"
+            >
+              <div
+                className={`relative overflow-hidden rounded-t-full bg-purple-950/30 shadow-2xl shadow-purple-950/40 ring-1 ring-white/15 ${
+                  isCentre
+                    ? "aspect-[3/5] lg:-translate-y-4"
+                    : "aspect-[3/4.4] lg:translate-y-3"
+                }`}
               >
+                <Image
+                  src={product.images[0]}
+                  alt={product.name}
+                  fill
+                  sizes="(min-width: 1024px) 18vw, 30vw"
+                  className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                {/* keeps the caption legible over busy outdoor photography */}
                 <div
-                  className={`relative overflow-hidden rounded-t-full bg-purple-950/30 shadow-2xl shadow-purple-950/40 ring-1 ring-white/15 ${
-                    isCentre
-                      ? "aspect-[3/5] lg:-translate-y-4"
-                      : "aspect-[3/4.4] lg:translate-y-3"
-                  }`}
-                >
-                  <Image
-                    src={product!.images[0]}
-                    alt={product!.name}
-                    fill
-                    sizes="(min-width: 1024px) 18vw, 30vw"
-                    className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
-                  {/* keeps the caption legible over busy outdoor photography */}
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-purple-950/80 to-transparent"
-                  />
-                  <span className="absolute inset-x-0 bottom-0 p-2 text-center text-[9px] font-medium uppercase leading-tight tracking-wider text-white/95 sm:p-3 sm:text-[11px]">
-                    {product!.name}
-                  </span>
-                </div>
-              </Link>
-            );
-          })}
+                  aria-hidden="true"
+                  className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-purple-950/80 to-transparent"
+                />
+                <span className="absolute inset-x-0 bottom-0 p-2 text-center text-[9px] font-medium uppercase leading-tight tracking-wider text-white/95 sm:p-3 sm:text-[11px]">
+                  {product.name}
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

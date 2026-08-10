@@ -43,12 +43,16 @@ export const sawanSale = {
     "sunset-bandhani-sharara-set",
   ],
 
-  /** The three used in the hero banner composition (centre listed first). */
-  bannerSlugs: [
-    "emerald-rose-bandhani-suit-set",
-    "midnight-bloom-embroidered-suit-set",
-    "amber-rose-bandhani-suit-set",
-  ],
+  /**
+   * The hero banner composition, by on-screen position.
+   * Client-approved arrangement: a bandhani suit either side of the white
+   * suit, which takes the raised centre position.
+   */
+  banner: {
+    left: "emerald-rose-bandhani-suit-set",
+    centre: "pearl-blossom-embroidered-suit-set",
+    right: "amber-rose-bandhani-suit-set",
+  },
 
   /** The four shown inside the popup. */
   popupSlugs: [
@@ -71,8 +75,23 @@ export function getSawanProducts(): Product[] {
   return resolve(sawanSale.productSlugs);
 }
 
-export function getSawanBannerProducts(): Product[] {
-  return resolve(sawanSale.bannerSlugs);
+export interface SawanBannerFigure {
+  product: Product;
+  isCentre: boolean;
+}
+
+/** Banner figures in left → centre → right display order, each flagged so the
+ *  centre piece can be given the raised, taller treatment. */
+export function getSawanBannerFigures(): SawanBannerFigure[] {
+  const positions = ["left", "centre", "right"] as const;
+  return positions
+    .map((position) => {
+      const product = products.find(
+        (p) => p.slug === sawanSale.banner[position]
+      );
+      return product ? { product, isCentre: position === "centre" } : null;
+    })
+    .filter((figure): figure is SawanBannerFigure => Boolean(figure));
 }
 
 export function getSawanPopupProducts(): Product[] {
