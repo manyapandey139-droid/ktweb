@@ -828,6 +828,95 @@ export const products: Product[] = [
     availability: "Available",
     newArrival: true,
   },
+
+  // ---- Independence Day collection -----------------------------------------
+  {
+    id: "tricolour-organza-saree",
+    slug: "tricolour-organza-saree",
+    name: "Tricolour Organza Saree",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/tricolour-organza-saree-front.jpg",
+      "/images/products/indian/tricolour-organza-saree-view-02.jpg",
+    ],
+    description:
+      "A sheer organza saree that moves through saffron, ivory and green, scattered with golden woven motifs and finished with a rich green border. Styled here with a white blouse, it drapes softly and catches the light beautifully. A radiant choice for Independence Day gatherings and festive mornings.",
+    colors: ["Saffron", "White", "Green"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "mother-daughter-tricolour-twinning-set",
+    slug: "mother-daughter-tricolour-twinning-set",
+    name: "Mother & Daughter Tricolour Twinning Set",
+    category: "mom-daughter",
+    price: 1000,
+    images: [
+      "/images/products/mom-kid/mother-daughter-tricolour-twinning-set-front.jpg",
+      "/images/products/mom-kid/mother-daughter-tricolour-twinning-set-view-02.jpg",
+      "/images/products/mom-kid/mother-daughter-tricolour-twinning-set-view-03.jpg",
+    ],
+    description:
+      "Celebrate together in matching tricolour drapes. A flowing organza saree for her is echoed in a coordinated little saree-style set for your daughter, both in saffron, ivory and green. A picture-perfect pairing for Independence Day functions, school celebrations and family photographs.",
+    colors: ["Saffron", "White", "Green"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "tricolour-white-anarkali-suit-set",
+    slug: "tricolour-white-anarkali-suit-set",
+    name: "Tricolour White Anarkali Suit Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/tricolour-white-anarkali-suit-set-front.jpg",
+      "/images/products/indian/tricolour-white-anarkali-suit-set-view-02.jpg",
+      "/images/products/indian/tricolour-white-anarkali-suit-set-view-03.jpg",
+      "/images/products/indian/tricolour-white-anarkali-suit-set-view-04.jpg",
+    ],
+    description:
+      "A flowing ivory anarkali paired with a striking saffron and green dupatta. The generous flare sweeps beautifully with every step while the tricolour drape brings instant festive spirit. Style it with the coordinating churidar for Independence Day events and cultural programmes.",
+    colors: ["White", "Saffron", "Green"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "indigo-bloom-embroidered-anarkali-set",
+    slug: "indigo-bloom-embroidered-anarkali-set",
+    name: "Indigo Bloom Embroidered Anarkali Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/indigo-bloom-embroidered-anarkali-set-front.jpg",
+      "/images/products/indian/indigo-bloom-embroidered-anarkali-set-view-02.jpg",
+      "/images/products/indian/indigo-bloom-embroidered-anarkali-set-view-03.jpg",
+      "/images/products/indian/indigo-bloom-embroidered-anarkali-set-view-04.jpg",
+    ],
+    description:
+      "A deep indigo anarkali covered in delicate white floral embroidery, finished with flared sleeves and a soft sheer overlay. Worn with ivory palazzo trousers, it brings quiet elegance to festive dressing. A graceful pick for celebrations, family functions and festive evenings.",
+    colors: ["Indigo", "White"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "tiranga-motif-straight-kurta",
+    slug: "tiranga-motif-straight-kurta",
+    name: "Tiranga Motif Straight Kurta",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/indian/tiranga-motif-straight-kurta-front.jpg",
+    ],
+    description:
+      "A crisp white straight kurta with a sequinned yoke and small tricolour flag motifs, finished with a soft green dupatta. Easy to wear over jeans or trousers, it brings understated patriotic charm to daytime celebrations and Independence Day outings.",
+    colors: ["White", "Green"],
+    availability: "Available",
+    newArrival: true,
+  },
 ];
 
 export function getAllProducts(): Product[] {

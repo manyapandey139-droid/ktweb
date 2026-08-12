@@ -6,9 +6,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import SawanSalePopup from "@/components/SawanSalePopup";
+import IndependenceDayPopup from "@/components/IndependenceDayPopup";
 import { WishlistProvider } from "@/contexts/WishlistContext";
-import { sawanSale, getSawanPopupProducts } from "@/data/sawanSale";
+import {
+  independenceDay,
+  getIndependencePopupProducts,
+} from "@/data/independenceDay";
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
@@ -58,13 +61,13 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <FloatingWhatsApp />
-          {sawanSale.isLive && (
-            <SawanSalePopup
-              products={getSawanPopupProducts()}
-              heading={sawanSale.popup.heading}
-              message={sawanSale.popup.message}
-              cta={sawanSale.popup.cta}
-              href={sawanSale.href}
+          {independenceDay.isLive && (
+            <IndependenceDayPopup
+              products={getIndependencePopupProducts()}
+              heading={independenceDay.popup.heading}
+              message={independenceDay.popup.message}
+              cta={independenceDay.popup.cta}
+              href={independenceDay.href}
             />
           )}
         </WishlistProvider>

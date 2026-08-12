@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { brandConfig } from "@/lib/brandConfig";
 import { categories } from "@/data/categories";
 import { products } from "@/data/products";
+import { independenceDay } from "@/data/independenceDay";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = brandConfig.seo.siteUrl;
@@ -13,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/shipping-returns",
     "/wishlist",
+    // the campaign landing page, only while the campaign is running
+    ...(independenceDay.isLive ? [independenceDay.href] : []),
   ].map((route) => ({
     url: `${base}${route}`,
     lastModified: new Date(),

@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Product } from "@/types/product";
-import { SawanLeaf } from "@/components/SawanDecor";
+import { ChakraMotif } from "@/components/IndependenceDecor";
 
-const STORAGE_KEY = "kt-sawan-sale-seen";
+const STORAGE_KEY = "kt-independence-day-seen";
 const OPEN_DELAY_MS = 1200;
 
 /**
- * Sawan Sale welcome popup.
+ * Independence Day welcome popup.
  *
  * Behaviour:
  *  • appears once per browser session, a beat after the first page loads
@@ -22,7 +22,7 @@ const OPEN_DELAY_MS = 1200;
  * Products are passed in from the server so the popup always shows real
  * catalog data (name, price, image) and links to the real product pages.
  */
-export default function SawanSalePopup({
+export default function IndependenceDayPopup({
   products,
   heading,
   message,
@@ -93,25 +93,29 @@ export default function SawanSalePopup({
       className="fixed inset-0 z-[60] flex items-center justify-center p-3 sm:p-6"
       role="dialog"
       aria-modal="true"
-      aria-labelledby="sawan-popup-heading"
+      aria-labelledby="independence-popup-heading"
     >
       {/* Backdrop */}
       <button
-        aria-label="Close Sawan Sale"
+        aria-label="Close Independence Day Sale"
         onClick={close}
         tabIndex={-1}
-        className="animate-sawan-fade-in absolute inset-0 cursor-default bg-purple-950/60 backdrop-blur-sm"
+        className="animate-indep-fade-in absolute inset-0 cursor-default bg-purple-950/60 backdrop-blur-sm"
       />
 
       {/* Panel — capped to the viewport so it can never overflow on mobile */}
-      <div className="animate-sawan-pop-in relative flex max-h-[92dvh] w-full max-w-lg flex-col overflow-hidden bg-cream shadow-2xl sm:max-w-xl">
-        <SawanLeaf className="right-[-2.5rem] top-[-2rem] h-40 w-40 text-purple-200/45" />
+      <div className="animate-indep-pop-in relative flex max-h-[92dvh] w-full max-w-lg flex-col overflow-hidden bg-cream shadow-2xl sm:max-w-xl">
+        {/* tricolour top edge */}
+        <span
+          aria-hidden="true"
+          className="absolute inset-x-0 top-0 z-10 h-1 bg-gradient-to-r from-[#FF9933] via-white to-[#138808]"
+        />
 
         <button
           ref={closeRef}
           onClick={close}
           aria-label="Close"
-          className="absolute right-2.5 top-2.5 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/85 text-purple-800 shadow-sm backdrop-blur transition-colors hover:bg-white"
+          className="absolute right-2.5 top-3.5 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/85 text-purple-800 shadow-sm backdrop-blur transition-colors hover:bg-white"
         >
           <svg
             viewBox="0 0 24 24"
@@ -127,17 +131,22 @@ export default function SawanSalePopup({
 
         <div className="overflow-y-auto">
           {/* Header */}
-          <div className="relative bg-gradient-to-br from-purple-800 to-purple-700 px-6 pb-7 pt-9 text-center sm:px-8 sm:pb-8 sm:pt-10">
-            <span className="text-[10px] font-medium uppercase tracking-[0.35em] text-lavender-200">
+          <div className="relative overflow-hidden bg-gradient-to-br from-purple-800 to-purple-700 px-6 pb-7 pt-9 text-center sm:px-8 sm:pb-8 sm:pt-10">
+            <ChakraMotif className="absolute -right-8 -top-8 h-40 w-40 text-white/[0.08]" />
+            <span className="relative text-[10px] font-medium uppercase tracking-[0.35em] text-lavender-200">
               KT&apos;s Fashion Presents
             </span>
             <h2
-              id="sawan-popup-heading"
-              className="font-serif-display mt-3 text-3xl text-white sm:text-4xl"
+              id="independence-popup-heading"
+              className="font-serif-display relative mt-3 text-3xl text-white sm:text-4xl"
             >
               {heading}
             </h2>
-            <p className="mx-auto mt-3 max-w-sm text-xs leading-relaxed text-lavender-100/90 sm:text-sm">
+            <span
+              aria-hidden="true"
+              className="relative mx-auto mt-4 block h-[3px] w-20 rounded-full bg-gradient-to-r from-[#FF9933] via-white to-[#138808]"
+            />
+            <p className="relative mx-auto mt-3 max-w-sm text-xs leading-relaxed text-lavender-100/90 sm:text-sm">
               {message}
             </p>
           </div>

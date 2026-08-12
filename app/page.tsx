@@ -8,11 +8,11 @@ import EditorialBanner from "@/components/EditorialBanner";
 import WhySection from "@/components/WhySection";
 import InstagramSection from "@/components/InstagramSection";
 import WhatsAppCTASection from "@/components/WhatsAppCTASection";
-import SawanSaleBanner from "@/components/SawanSaleBanner";
-import SawanSaleSection from "@/components/SawanSaleSection";
+import IndependenceDayBanner from "@/components/IndependenceDayBanner";
+import IndependenceDaySection from "@/components/IndependenceDaySection";
 import { categories } from "@/data/categories";
 import { getFeaturedProducts, getNewArrivals } from "@/data/products";
-import { sawanSale } from "@/data/sawanSale";
+import { independenceDay } from "@/data/independenceDay";
 
 export default function Home() {
   const featured = getFeaturedProducts();
@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <Hero />
 
-      {sawanSale.isLive && <SawanSaleBanner />}
+      {independenceDay.isLive && <IndependenceDayBanner />}
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
         <SectionHeading
@@ -71,7 +71,7 @@ export default function Home() {
         </section>
       )}
 
-      {sawanSale.isLive && <SawanSaleSection />}
+      {independenceDay.isLive && <IndependenceDaySection />}
 
       <AboutSection />
       <EditorialBanner />

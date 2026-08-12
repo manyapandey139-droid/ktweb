@@ -52,8 +52,10 @@ export const categories: CategoryInfo[] = [
     title: "Mom & Daughter",
     navLabel: "Mom & Daughter",
     shortDescription: "Matching outfits for the perfect twinning moment.",
-    image: "/images/products/mom-kid/mom-kid-teaser.jpg",
-    comingSoon: true,
+    // Live as of the Independence Day collection — real twinning products
+    // now exist, so the "Coming Soon" state has been lifted.
+    image:
+      "/images/products/mom-kid/mother-daughter-tricolour-twinning-set-front.jpg",
   },
 ];
 
