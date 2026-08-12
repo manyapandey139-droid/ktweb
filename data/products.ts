@@ -315,7 +315,7 @@ export const products: Product[] = [
     slug: "golden-paisley-co-ord-set",
     name: "Golden Paisley Co-Ord Set",
     category: "cord-set",
-    price: 1000,
+    price: 1700,
     images: [
       "/images/products/indo-western/golden-paisley-co-ord-set-front.jpg",
       "/images/products/indo-western/golden-paisley-co-ord-set-view-02.jpg",
@@ -334,7 +334,7 @@ export const products: Product[] = [
     slug: "peacock-nazakat-fusion-set",
     name: "Peacock Nazakat Fusion Set",
     category: "cord-set",
-    price: 1000,
+    price: 2700,
     images: [
       "/images/products/indo-western/peacock-nazakat-fusion-set-front.jpg",
       "/images/products/indo-western/peacock-nazakat-fusion-set-view-02.jpg",
@@ -392,7 +392,7 @@ export const products: Product[] = [
     slug: "ivory-bloom-kurti-palazzo",
     name: "Ivory Bloom Kurti & Palazzo",
     category: "cord-set",
-    price: 1000,
+    price: 1700,
     images: [
       "/images/products/indo-western/ivory-bloom-kurti-palazzo-front.jpg",
       "/images/products/indo-western/ivory-bloom-kurti-palazzo-view-02.jpg",
@@ -653,7 +653,7 @@ export const products: Product[] = [
     slug: "onyx-shimmer-peplum-co-ord",
     name: "Onyx Shimmer Peplum Co-Ord",
     category: "cord-set",
-    price: 1000,
+    price: 2700,
     images: [
       "/images/products/western/onyx-shimmer-peplum-co-ord-front.jpg",
       "/images/products/western/onyx-shimmer-peplum-co-ord-view-02.jpg",
@@ -692,7 +692,7 @@ export const products: Product[] = [
     slug: "fern-floral-top-palazzo",
     name: "Fern Floral Top & Palazzo",
     category: "cord-set",
-    price: 1000,
+    price: 2700,
     images: [
       "/images/products/western/fern-floral-top-palazzo-front.jpg",
       "/images/products/western/fern-floral-top-palazzo-view-02.jpg",
@@ -835,7 +835,7 @@ export const products: Product[] = [
     slug: "tricolour-organza-saree",
     name: "Tricolour Organza Saree",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1200,
     images: [
       "/images/products/indian/tricolour-organza-saree-front.jpg",
       "/images/products/indian/tricolour-organza-saree-view-02.jpg",
@@ -870,7 +870,7 @@ export const products: Product[] = [
     slug: "tricolour-white-anarkali-suit-set",
     name: "Tricolour White Anarkali Suit Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 999,
     images: [
       "/images/products/indian/tricolour-white-anarkali-suit-set-front.jpg",
       "/images/products/indian/tricolour-white-anarkali-suit-set-view-02.jpg",
@@ -889,7 +889,7 @@ export const products: Product[] = [
     slug: "indigo-bloom-embroidered-anarkali-set",
     name: "Indigo Bloom Embroidered Anarkali Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 999,
     images: [
       "/images/products/indian/indigo-bloom-embroidered-anarkali-set-front.jpg",
       "/images/products/indian/indigo-bloom-embroidered-anarkali-set-view-02.jpg",
@@ -907,7 +907,7 @@ export const products: Product[] = [
     slug: "tiranga-motif-straight-kurta",
     name: "Tiranga Motif Straight Kurta",
     category: "ethnic-suit",
-    price: 1000,
+    price: 800,
     images: [
       "/images/products/indian/tiranga-motif-straight-kurta-front.jpg",
     ],
