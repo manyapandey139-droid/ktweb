@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Jost } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script";
 import "./globals.css";
 import { brandConfig } from "@/lib/brandConfig";
 import Navbar from "@/components/Navbar";
@@ -56,6 +57,19 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${jost.variable} h-full`}>
       <body className="min-h-full flex flex-col bg-cream text-ink antialiased">
+      <Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-0C9287FNV4"
+  strategy="afterInteractive"
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0C9287FNV4');
+  `}
+</Script>
         <WishlistProvider>
           <AnnouncementBar />
           <Navbar />
@@ -72,6 +86,7 @@ export default function RootLayout({
             />
           )}
         </WishlistProvider>
+        <Analytics />
       </body>
     </html>
   );
