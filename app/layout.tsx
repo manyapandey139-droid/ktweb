@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Jost } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 import { brandConfig } from "@/lib/brandConfig";
 import Navbar from "@/components/Navbar";

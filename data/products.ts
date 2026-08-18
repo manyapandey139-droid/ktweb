@@ -829,6 +829,25 @@ export const products: Product[] = [
     newArrival: true,
   },
 
+  {
+    id: "ivory-blossom-mirror-sharara-set",
+    slug: "ivory-blossom-mirror-sharara-set",
+    name: "Ivory Blossom Mirror Sharara Set",
+    category: "ethnic-suit",
+    price: 1800,
+    images: [
+      "/images/products/indian/ivory-blossom-mirror-sharara-set-front.jpg",
+      "/images/products/indian/ivory-blossom-mirror-sharara-set-view-02.jpg",
+      "/images/products/indian/ivory-blossom-mirror-sharara-set-view-03.jpg",
+      "/images/products/indian/ivory-blossom-mirror-sharara-set-detail.jpg",
+    ],
+    description:
+      "Soft ivory scattered with a delicate multicoloured floral print, lifted by a mirror-work and thread-embroidered yoke that catches the light with every turn. The straight kurta falls over a matching flared sharara finished with a printed hem border, while the coordinating dupatta carries the same blossoms through its sequinned drape. An easy, graceful choice for daytime functions, festive mornings and family celebrations.",
+    colors: ["Ivory"],
+    availability: "Available",
+    newArrival: true,
+  },
+
   // ---- Independence Day collection -----------------------------------------
   {
     id: "tricolour-organza-saree",
