@@ -936,6 +936,23 @@ export const products: Product[] = [
     availability: "Available",
     newArrival: true,
   },
+  {
+    id: "frost-bloom-lace-shirt-denim-set",
+    slug: "frost-bloom-lace-shirt-denim-set",
+    name: "Frost Bloom Lace Shirt & Denim Set",
+    category: "cord-set",
+    price: 1500,
+    images: [
+      "/images/products/western/frost-bloom-lace-shirt-denim-set-front.jpg",
+      "/images/products/western/frost-bloom-lace-shirt-denim-set-view-02.jpg",
+      "/images/products/western/frost-bloom-lace-shirt-denim-set-view-03.jpg",
+    ],
+    description:
+      "A powder-blue collared shirt layered under a white floral cut-work overlay, finished with a scalloped hem that falls softly over the hip. Wide-leg light-wash jeans with raw frayed seam detailing complete the look for a relaxed, contemporary line. Fresh, easy and quietly polished, it is made for brunch tables, city afternoons and days you want to look effortless without trying.",
+    colors: ["Powder Blue", "White"],
+    availability: "Available",
+    newArrival: true,
+  },
 ];
 
 export function getAllProducts(): Product[] {
