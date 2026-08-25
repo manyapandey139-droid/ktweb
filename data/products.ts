@@ -1017,10 +1017,11 @@ export const products: Product[] = [
     category: "cocktail-dress",
     price: 2999,
     images: [
-      "public/images/products/cocktail/blue_cocktail.jpg",
-      "public/images/products/cocktail/blue_cocktail (2).jpg",
-      "public/images/products/cocktail/blue_cocktail (3).jpg",
-      "public/images/products/cocktail/blue_cocktail (5).jpg"
+      "/images/products/cocktail/blue_cocktail.jpg",
+      "/images/products/cocktail/blue_cocktail (2).jpg",
+      "/images/products/cocktail/blue_cocktail (3).jpg",
+      "/images/products/cocktail/blue_cocktail (4).jpg",
+      "/images/products/cocktail/blue_cocktail (5).jpg",
     ],
     description:
       "A vibrant blue cocktail dress with a flattering fit and elegant details, perfect for festive occasions and special events.",
