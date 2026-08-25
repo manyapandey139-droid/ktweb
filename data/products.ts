@@ -953,6 +953,82 @@ export const products: Product[] = [
     availability: "Available",
     newArrival: true,
   },
+   {
+    id: "pink_suit_01",
+    slug: "pink_suit_01",
+    name: "Pink Suit With Handwork",
+    category: "ethnic-suit",
+    price:2500 ,
+    images: [
+      "/images/products/indian/pink_suit (3).jpg",
+      "/images/products/indian/pink_suit (4).jpg",
+      "/images/products/indian/pink_suit (5).jpg",
+      "/images/products/indian/pink_suit.jpg",
+      "/images/products/indian/pink_suit (2).jpg",
+    ],
+    description:
+      "A graceful blush-pink suit set featuring delicate floral embroidery and a soft, elegant finish, paired with a matching dupatta for a sophisticated festive look.",
+    colors: ["pink"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "blue_suit_01",
+    slug: "blue_suit_01",
+    name: "Blue Suit With Embroidery",
+    category: "ethnic-suit",
+    price: 2500,
+    images: [
+      "/images/products/indian/blue_suit.jpg",
+      "/images/products/indian/blue_suit (2).jpg",
+      "/images/products/indian/blue_suit (3).jpg",
+      "/images/products/indian/blue_suit (4).jpg",
+      "/images/products/indian/blue_suit (5).jpg",
+    ],
+    description:
+      "A elegant blue suit set with intricate embroidery and a soft, refined finish, paired with a matching dupatta for a sophisticated festive look.",
+    colors: ["Blue"],
+    availability: "Available",
+    newArrival: true,
+  },
+  {
+    id: "yellow_cocktail_dress_01",
+    slug: "yellow_cocktail_dress_01",
+    name: "Yellow Cocktail Dress",
+    category: "cocktail-dress",
+    price: 2999,
+    images: [
+      "/images/products/western/yellow_cocktail_dress_01.jpg",
+      "/images/products/western/yellow_cocktail_dress_02.jpg",
+      "/images/products/western/yellow_cocktail_dress_03.jpg",
+      "/images/products/western/yellow_cocktail_dress_04.jpg",
+    ],
+    description:
+      "A vibrant yellow cocktail dress with a flattering fit and elegant details, perfect for festive occasions and special events.",
+    colors: ["Yellow"],
+    availability: "Available",
+    newArrival: true,
+  },
+   {
+    id: "blue_cocktail_dress_01",
+    slug: "blue_cocktail_dress_01",
+    name: "Blue Cocktail Dress",
+    category: "cocktail-dress",
+    price: 2999,
+    images: [
+      "/images/products/western/blue_cocktail_dress_01.jpg",
+      "/images/products/western/blue_cocktail_dress_02.jpg",
+      "/images/products/western/blue_cocktail_dress_03.jpg",
+      "/images/products/western/blue_cocktail_dress_04.jpg",
+    ],
+    description:
+      "A vibrant blue cocktail dress with a flattering fit and elegant details, perfect for festive occasions and special events.",
+    colors: ["Blue"],
+    availability: "Available",
+    newArrival: true,
+  },
+  
+  
 ];
 
 export function getAllProducts(): Product[] {
