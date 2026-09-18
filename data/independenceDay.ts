@@ -15,7 +15,7 @@ import { Product } from "@/types/product";
 // ---------------------------------------------------------------------------
 
 export const independenceDay = {
-  isLive: true,
+  isLive: false,
 
   /** Where every "Shop Independence Day Sale" button points. */
   href: "/independence-day-sale",
