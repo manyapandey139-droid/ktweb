@@ -10,6 +10,7 @@ import InstagramSection from "@/components/InstagramSection";
 import WhatsAppCTASection from "@/components/WhatsAppCTASection";
 import IndependenceDayBanner from "@/components/IndependenceDayBanner";
 import IndependenceDaySection from "@/components/IndependenceDaySection";
+import PromoBanner from "@/components/PromoBanner";
 import { categories } from "@/data/categories";
 import { getFeaturedProducts, getNewArrivals } from "@/data/products";
 import { independenceDay } from "@/data/independenceDay";
@@ -21,6 +22,8 @@ export default function Home() {
   return (
     <>
       <Hero />
+
+      <PromoBanner />
 
       {independenceDay.isLive && <IndependenceDayBanner />}
 
