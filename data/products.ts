@@ -1029,8 +1029,348 @@ export const products: Product[] = [
     availability: "Available",
     newArrival: true,
   },
+   {
+    id: "bandhani_suit_01",
+    slug: "bandhani_suit_01",
+    name: "Bandhani Suit - 1",
+   category: "ethnic-suit",
+    price: 1200,
+    images: [ 
+      "/images/products/navratri/DJI_20260920134530_0170_D.jpg",
+       "/images/products/navratri/DJI_20260920134437_0167_D.jpg",
+       "/images/products/navratri/DJI_20260920134448_0168_D.jpg",
+       "/images/products/navratri/DJI_20260920134530_0170_D.jpg",
+       "/images/products/navratri/DJI_20260920134539_0172_D.jpg",
+       "/images/products/navratri/DJI_20260920134546_0173_D.jpg",
+       "/images/products/navratri/DJI_20260920134605_0174_D.jpg",
+       "/images/products/navratri/DJI_20260920134656_0176_D.jpg",
+       "/images/products/navratri/DJI_20260920134709_0178_D.jpg",
+
+       ],
+    description:
+      "",
+    colors: ["Blue","Pink"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "black_lehenga",
+    slug: "black_lehenga",
+    name: "Black Lehenga",
+    category: "ethnic-suit",
+    price: 2500,
+    images: [ 
+      "/images/navratri/DJI_20260920152826_0193_D.jpg",
+      "/images/navratri/DJI_20260920152834_0194_D.jpg",
+      "/images/navratri/DJI_20260920152850_0195_D.jpg",
+      "/images/navratri/DJI_20260920152907_0196_D.jpg",
+      "/images/navratri/DJI_20260920152936_0197_D.jpg",
+       ],
+    description:
+      "",
+    colors: ["Black"],
+    availability: "Available",
+    featured: true,
+  },
+   {
+    id: "blue_lehenga",
+    slug: "blue_lehenga",
+    name: "Blue Lehenga",
+    category: "ethnic-suit",
+    price: 2500,
+
+    images: [ 
+      "/images/navratri/DJI_20260920153214_0201_D.jpg",
+      "/images/navratri/DJI_20260920153222_0202_D.jpg",
+      "/images/navratri/DJI_20260920153230_0203_D.jpg",
+      "/images/navratri/DJI_20260920153234_0204_D.jpg",
+      "/images/navratri/DJI_20260920153250_0205_D.jpg",
+      "/images/navratri/DJI_20260920153254_0206_D.jpg",
+      ],
+    description:
+      "",
+    colors: ["Blue"],
+    availability: "Available",
+    featured: true,
+  },
+   {
+    id: "black_lehenga_02",
+    slug: "black_lehenga_02",
+    name: "Black Lehenga 02",
+    category: "ethnic-suit",
+    price: 2999,
+
+    images: [ 
+      "/images/navratri/DJI_20260920165531_0237_D.jpg",
+      "/images/navratri/DJI_20260920165535_0238_D.jpg",
+      "/images/navratri/DJI_20260920165540_0239_D.jpg",
+      "/images/navratri/DJI_20260920165546_0240_D.jpg",
+      "/images/navratri/DJI_20260920165549_0241_D.jpg",
+      "/images/navratri/DJI_20260920165607_0242_D.jpg",
+      "/images/navratri/DJI_20260920165610_0243_D.jpg",
+      "/images/navratri/DJI_20260920165622_0244_D.jpg",
+      "/images/navratri/DJI_20260920165629_0245_D.jpg",
+ 
+    ],
+    description:
+      "",
+    colors: ["Black"],
+    availability: "Available",
+    featured: true,
+  },
   
-  
+  {
+    id: "Multi_color_lehenga-02",
+    slug: "Multi_color_lehenga-02",
+    name: "Multi Color Lehenga 02",
+    category: "ethnic-suit",
+    price: 2500,
+
+    images: [ 
+     "/images/navratri 2/DSC04207.jpg",
+     "/images/navratri 2/DSC04208.jpg",
+     "/images/navratri 2/DSC04209.jpg",
+     "/images/navratri 2/DSC04210.jpg",
+     "/images/navratri 2/DSC04211.jpg",
+     "/images/navratri 2/DSC04212.jpg",
+     "/images/navratri 2/DSC04213.jpg",
+     "/images/navratri 2/DSC04214.jpg",
+
+    ],
+    description:
+      "",
+    colors: ["Multi Color"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "Multi_color_lehenga-03",
+    slug: "Multi_color_lehenga-03",
+    name: "Multi Color Lehenga 03",
+    category: "ethnic-suit",
+    price: 2500,
+
+    images: [ 
+     "/images/navratri 2/DSC04215.jpg",
+     "/images/navratri 2/DSC04216.jpg",
+     "/images/navratri 2/DSC04217.jpg",
+     "/images/navratri 2/DSC04218.jpg",
+     "/images/navratri 2/DSC04219.jpg",
+     "/images/navratri 2/DSC04220.jpg",
+
+    ],
+    description:
+      "",
+    colors: ["Multi Color"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "purple_suit",
+    slug: "purple_suit",
+    name: "Purple Suit",
+    category: "ethnic-suit",
+    price: 2999,
+
+    images: [ 
+     "/images/navratri 2/DSC04221.jpg",
+     "/images/navratri 2/DSC04222.jpg",
+     "/images/navratri 2/DSC04223.jpg",
+     "/images/navratri 2/DSC04224.jpg",
+     "/images/navratri 2/DSC04225.jpg",
+     "/images/navratri 2/DSC04226.jpg",
+     "/images/navratri 2/DSC04227.jpg",
+     "/images/navratri 2/DSC04228.jpg",
+     "/images/navratri 2/DSC04229.jpg",
+
+    ],
+    description:
+      "",
+    colors: ["Purple"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "orange-suit",
+    slug: "orange-suit",
+    name: "Orange Suit",
+    category: "ethnic-suit",
+    price: 2999,
+
+    images: [ 
+     "/images/navratri 2/DSC04240.jpg",
+     "/images/navratri 2/DSC04241.jpg",
+     "/images/navratri 2/DSC04242.jpg",
+     "/images/navratri 2/DSC04243.jpg",
+     "/images/navratri 2/DSC04244.jpg",
+
+    ],
+    description:
+      "",
+    colors: ["Orange"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "pink_lehenga",
+    slug: "pink_lehenga",
+    name: "Pink Lehenga",
+    category: "ethnic-suit",
+    price: 2500,
+
+    images: [ 
+     "/images/navratri 2/DSC04245.jpg",
+     "/images/navratri 2/DSC04249.jpg",
+     "/images/navratri 2/DSC04250.jpg",
+     "/images/navratri 2/DSC04251.jpg"
+
+    ],
+    description:
+      "",
+    colors: ["Pink"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "purple_lehenga-02",
+    slug: "purple_lehenga-02",
+    name: "Purple Lehenga 02",
+    category: "ethnic-suit",
+    price: 2500,
+
+    images: [ 
+      "/images/navratri 2/DSC04252.jpg",
+      "/images/navratri 2/DSC04256.jpg",
+      "/images/navratri 2/DSC04258.jpg",
+      "/images/navratri 2/DSC04260.jpg",
+    ],
+    description:
+      "",
+    colors: ["Purple"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "white_lehenga",
+    slug: "white_lehenga",
+    name: "White Lehenga",
+    category: "ethnic-suit",
+    price: 2500,
+
+    images: [ 
+     "/images/navratri 2/DSC04269.jpg",
+     "/images/navratri 2/DSC04270.jpg",
+     "/images/navratri 2/DSC04271.jpg",
+    ],
+    description:
+      "",
+    colors: ["White"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "mixed-lehenga",
+    slug: "mixed-lehenga",
+    name: "Mixed Lehenga",
+    category: "ethnic-suit",
+    price: 2500,
+
+    images: [ 
+      "/images/navratri 2/DSC04272.jpg",
+      "/images/navratri 2/DSC04273.jpg",
+      "/images/navratri 2/DSC04274.jpg",
+      "/images/navratri 2/DSC04275.jpg",
+      "/images/navratri 2/DSC04276.jpg",
+     
+    ],
+    description:
+      "",
+    colors: ["Mixed"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "orange_suit",
+    slug: "orange_suit",
+    name: "Orange Suit",
+    category: "ethnic-suit",
+    price: 1200,
+
+    images: [ 
+     "/images/navratri 2/DSC04278.jpg",
+     "/images/navratri 2/DSC04281.jpg",
+     "/images/navratri 2/DSC04282.jpg",
+     "/images/navratri 2/DSC04283.jpg",
+
+    ],
+    description:
+      "",
+    colors: ["Orange"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "blue_suit",
+    slug: "blue_suit",
+    name: "Blue Suit",
+    category: "ethnic-suit",
+    price: 1200,
+
+    images: [ 
+     "/images/navratri 2/DSC04292.jpg",
+     "/images/navratri 2/DSC04295.jpg",
+     "/images/navratri 2/DSC04296.jpg"
+    ],
+    description:
+      "",
+    colors: ["Blue"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "white_lehenga_02",
+    slug: "white_lehenga_02",
+    name: "White Lehenga 02",
+    category: "ethnic-suit",
+    price: 2500,
+
+    images: [ 
+     "ktweb/public/images/navratri 2/DSC04300.jpg",
+     "ktweb/public/images/navratri 2/DSC04301.jpg",
+     "ktweb/public/images/navratri 2/DSC04302.jpg",
+     "ktweb/public/images/navratri 2/DSC04303.jpg",
+     "ktweb/public/images/navratri 2/DSC04304.jpg",
+     "ktweb/public/images/navratri 2/DSC04305.jpg",
+
+    ],
+    description:
+      "",
+    colors: ["White"],
+    availability: "Available",
+    featured: true,
+  },
+  {
+    id: "white_lehenga_03",
+    slug: "white_lehenga_03",
+    name: "White Lehenga 03",
+    category: "ethnic-suit",
+    price: 2500,
+
+    images: [ 
+     "/images/navratri 2/DSC04305.jpg",
+     "/images/navratri 2/DSC04306.jpg",
+     "/images/navratri 2/DSC04307.jpg",
+     "/images/navratri 2/DSC04308.jpg",
+     "/images/navratri 2/DSC04309.jpg",
+     "/images/navratri 2/DSC04311.jpg",
+    ],
+    description:
+      "",
+    colors: ["White"],
+    availability: "Available",
+    featured: true,
+  },
+ 
 ];
 
 export function getAllProducts(): Product[] {
