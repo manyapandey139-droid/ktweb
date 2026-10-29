@@ -1,0 +1,96 @@
+import type { Metadata } from "next";
+import { Playfair_Display, Jost } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script";
+import "./globals.css";
+import { brandConfig } from "@/lib/brandConfig";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import AnnouncementBar from "@/components/AnnouncementBar";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import IndependenceDayPopup from "@/components/IndependenceDayPopup";
+import PromoPopup from "@/components/PromoPopup";
+import { WishlistProvider } from "@/contexts/WishlistContext";
+
+import {
+  independenceDay,
+  getIndependencePopupProducts,
+} from "@/data/independenceDay";
+
+const playfair = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const jost = Jost({
+  variable: "--font-sans",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL(brandConfig.seo.siteUrl),
+  title: {
+    default: brandConfig.seo.defaultTitle,
+    template: `%s | ${brandConfig.brandName}`,
+  },
+  description: brandConfig.seo.defaultDescription,
+  openGraph: {
+    title: brandConfig.seo.defaultTitle,
+    description: brandConfig.seo.defaultDescription,
+    siteName: brandConfig.brandName,
+    locale: "en_IN",
+    type: "website",
+    images: ["/images/brand/hero-model-1.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: brandConfig.seo.defaultTitle,
+    description: brandConfig.seo.defaultDescription,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${playfair.variable} ${jost.variable} h-full`}>
+      <body className="min-h-full flex flex-col bg-cream text-ink antialiased">
+      <Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-0C9287FNV4"
+  strategy="afterInteractive"
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0C9287FNV4');
+  `}
+</Script>
+        <WishlistProvider>
+          <AnnouncementBar />
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <FloatingWhatsApp />
+          <PromoPopup />
+          {independenceDay.isLive && (
+            <IndependenceDayPopup
+              products={getIndependencePopupProducts()}
+              heading={independenceDay.popup.heading}
+              message={independenceDay.popup.message}
+              cta={independenceDay.popup.cta}
+              href={independenceDay.href}
+            />
+          )}
+        </WishlistProvider>
+        <Analytics />
+      </body>
+    </html>
+  );
+}

@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+
+  --color-cream: #fffdfb;
+  --color-ink: #2b1f38;
+
+  --color-lavender-50: #faf7fd;
+  --color-lavender-100: #f4eefa;
+  --color-lavender-200: #e8ddf3;
+  --color-lavender-300: #d6c1e8;
+
+  --color-purple-50: #f6f0fb;
+  --color-purple-100: #ead9f4;
+  --color-purple-200: #d3b3e8;
+  --color-purple-300: #b585d6;
+  --color-purple-400: #9a5fc4;
+  --color-purple-500: #7f42ab;
+  --color-purple-600: #6a2f96;
+  --color-purple-700: #5b2680;
+  --color-purple-800: #481f65;
+  --color-purple-900: #391a4d;
+
+  --color-gold-400: #cba861;
+  --color-gold-500: #b3903f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
+/* Elegant subtle fade-in used for section reveals */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ---- Independence Day campaign ----------------------------------------- */
+
+/* Tricolour ribbons drifting down the banner */
+@keyframes indep-drift {
+  0% {
+    transform: translateY(-110%);
+    opacity: 0;
+  }
+  18% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(330%);
+    opacity: 0;
+  }
+}
+
+.animate-indep-drift {
+  animation-name: indep-drift;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Popup entrance */
+@keyframes indep-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-indep-pop-in {
+  animation: indep-pop-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes indep-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-indep-fade-in {
+  animation: indep-fade-in 0.3s ease-out both;
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-purple-500);
+  outline-offset: 2px;
+}
