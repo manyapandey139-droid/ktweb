@@ -8,12 +8,9 @@ import EditorialBanner from "@/components/EditorialBanner";
 import WhySection from "@/components/WhySection";
 import InstagramSection from "@/components/InstagramSection";
 import WhatsAppCTASection from "@/components/WhatsAppCTASection";
-import IndependenceDayBanner from "@/components/IndependenceDayBanner";
-import IndependenceDaySection from "@/components/IndependenceDaySection";
-import PromoBanner from "@/components/PromoBanner";
+import DiwaliSaleBanner from "@/components/DiwaliSaleBanner";
 import { categories } from "@/data/categories";
 import { getFeaturedProducts, getNewArrivals } from "@/data/products";
-import { independenceDay } from "@/data/independenceDay";
 
 export default function Home() {
   const featured = getFeaturedProducts();
@@ -23,9 +20,8 @@ export default function Home() {
     <>
       <Hero />
 
-      <PromoBanner />
-
-      {independenceDay.isLive && <IndependenceDayBanner />}
+      {/* Diwali Festive Sale Banner with 10% OFF & Featured Ethnic Outfits */}
+      <DiwaliSaleBanner />
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
         <SectionHeading
@@ -73,8 +69,6 @@ export default function Home() {
           <ProductGrid products={newArrivals} />
         </section>
       )}
-
-      {independenceDay.isLive && <IndependenceDaySection />}
 
       <AboutSection />
       <EditorialBanner />

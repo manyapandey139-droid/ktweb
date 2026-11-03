@@ -15,10 +15,268 @@ import { Product } from "@/types/product";
 // ---------------------------------------------------------------------------
 
 export const products: Product[] = [
-  // =========================================================================
-  // LATEST NEW ARRIVALS (WESTERN WEAR & NAVRATRI FESTIVE)
-  // =========================================================================
+  //   // BRAND NEW FESTIVE & WEDDING COLLECTION (PRICE: ₹1000)
+  // 
+  {
+    id: "maroon-velvet-peplum-palazzo",
+    slug: "maroon-velvet-peplum-palazzo",
+    name: "Maroon Velvet Floral Embroidered Peplum & Palazzo Set",
+    category: "cord-set",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/maroon-velvet-peplum-palazzo-front.jpg",
+      "/images/products/new-collection/maroon-velvet-peplum-palazzo-view-02.jpg",
+      "/images/products/new-collection/maroon-velvet-peplum-palazzo-view-03.jpg",
+      "/images/products/new-collection/maroon-velvet-peplum-palazzo-view-04.jpg",
+      "/images/products/new-collection/maroon-velvet-peplum-palazzo-view-05.jpg",
+    ],
+    description:
+      "Opulent deep maroon velvet peplum kurti adorned with intricate ivory floral zardozi embroidery and a flattering flared hem, paired with fluid matching palazzo trousers and an embroidered sheer dupatta.",
+    colors: ["Maroon"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "blush-lavender-organza-lehenga",
+    slug: "blush-lavender-organza-lehenga",
+    name: "Blush Lavender Organza Flared Lehenga Set",
+    category: "cocktail-dress",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/blush-lavender-organza-lehenga-front.jpg",
+      "/images/products/new-collection/blush-lavender-organza-lehenga-view-02.jpg",
+      "/images/products/new-collection/blush-lavender-organza-lehenga-view-03.jpg",
+      "/images/products/new-collection/blush-lavender-organza-lehenga-view-04.jpg",
+      "/images/products/new-collection/blush-lavender-organza-lehenga-view-05.jpg",
+    ],
+    description:
+      "Dreamy ethereal lavender-blush flared lehenga in delicate organza, paired with an embroidered crop top featuring sheer statement bishop sleeves and floral motifs for magical celebratory evenings.",
+    colors: ["Lavender", "Blush Pink"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "crimson-drape-saree-gown",
+    slug: "crimson-drape-saree-gown",
+    name: "Crimson Drape Saree Gown with Velvet Sequin Shrug",
+    category: "gown",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/crimson-drape-saree-gown-front.jpg",
+      "/images/products/new-collection/crimson-drape-saree-gown-view-02.jpg",
+      "/images/products/new-collection/crimson-drape-saree-gown-view-03.jpg",
+      "/images/products/new-collection/crimson-drape-saree-gown-view-04.jpg",
+      "/images/products/new-collection/crimson-drape-saree-gown-view-05.jpg",
+      "/images/products/new-collection/crimson-drape-saree-gown-view-06.jpg",
+    ],
+    description:
+      "Sculpted crimson red pre-draped saree gown detailed with a structured pleated waist and cascading pallu drape, crowned with an opulent sequin-embellished velvet jacket blazer.",
+    colors: ["Red", "Maroon"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "champagne-shimmer-tissue-twinning-set",
+    slug: "champagne-shimmer-tissue-twinning-set",
+    name: "Champagne Shimmer Tissue Twinning Kurta & Lehenga Set",
+    category: "mom-daughter",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/champagne-shimmer-tissue-twinning-set-front.jpg",
+      "/images/products/new-collection/champagne-shimmer-tissue-twinning-set-view-02.jpg",
+      "/images/products/new-collection/champagne-shimmer-tissue-twinning-set-view-03.jpg",
+      "/images/products/new-collection/champagne-shimmer-tissue-twinning-set-view-04.jpg",
+      "/images/products/new-collection/champagne-shimmer-tissue-twinning-set-view-05.jpg",
+    ],
+    description:
+      "Radiant festive twinning in luminous champagne gold tissue: one in a classic sleeveless high-slit straight kurta set and one in a twirl-worthy lehenga and crop top, both catching light with subtle metallic grace.",
+    colors: ["Gold", "Beige"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "lemon-sunshine-embroidered-cape-set",
+    slug: "lemon-sunshine-embroidered-cape-set",
+    name: "Lemon Sunshine Embroidered Cape & Dhoti Set",
+    category: "cord-set",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/lemon-sunshine-embroidered-cape-set-front.jpg",
+      "/images/products/new-collection/lemon-sunshine-embroidered-cape-set-view-02.jpg",
+      "/images/products/new-collection/lemon-sunshine-embroidered-cape-set-view-03.jpg",
+    ],
+    description:
+      "Luminous sunshine yellow sheer organza cape lavishly embroidered with floral zari and mirror details, styled over an ivory silk crop bustier and fluid draped dhoti bottoms.",
+    colors: ["Yellow", "Ivory"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "pastel-rose-embroidered-cape-set",
+    slug: "pastel-rose-embroidered-cape-set",
+    name: "Pastel Rose Embroidered Cape & Dhoti Set",
+    category: "cord-set",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/pastel-rose-embroidered-cape-set-front.jpg",
+      "/images/products/new-collection/pastel-rose-embroidered-cape-set-view-02.jpg",
+      "/images/products/new-collection/pastel-rose-embroidered-cape-set-view-03.jpg",
+      "/images/products/new-collection/pastel-rose-embroidered-cape-set-view-04.jpg",
+    ],
+    description:
+      "Romantic pastel rose-pink cape set detailed with intricate botanical threadwork and scalloped border embroidery, layered over an ivory crop top and pleated dhoti pants.",
+    colors: ["Pink", "Ivory"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "ivory-silk-kurti-salwar",
+    slug: "ivory-silk-kurti-salwar",
+    name: "Ivory Silk Short Kurti & Salwar Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/ivory-silk-kurti-salwar-front.jpg",
+      "/images/products/new-collection/ivory-silk-kurti-salwar-view-02.jpg",
+      "/images/products/new-collection/ivory-silk-kurti-salwar-view-03.jpg",
+      "/images/products/new-collection/ivory-silk-kurti-salwar-view-04.jpg",
+      "/images/products/new-collection/ivory-silk-kurti-salwar-view-05.jpg",
+    ],
+    description:
+      "Pristine ivory raw silk short kurti accented with gold gota kinari lace borders, gathered waist, and matching salwar pants. Includes a coordinated handcrafted gold festive potli bag.",
+    colors: ["Ivory", "Gold"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "rose-carmine-silk-kurti-salwar",
+    slug: "rose-carmine-silk-kurti-salwar",
+    name: "Rose Carmine Silk Short Kurti & Salwar Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/rose-carmine-silk-kurti-salwar-front.jpg",
+      "/images/products/new-collection/rose-carmine-silk-kurti-salwar-view-02.jpg",
+      "/images/products/new-collection/rose-carmine-silk-kurti-salwar-view-03.jpg",
+      "/images/products/new-collection/rose-carmine-silk-kurti-salwar-view-04.jpg",
+      "/images/products/new-collection/rose-carmine-silk-kurti-salwar-view-05.jpg",
+    ],
+    description:
+      "Vibrant rose-carmine silk short kurti edged with delicate gold gota-patti scalloped trims, styled with a pleated salwar and gossamer dupatta for celebratory poojas and festivities.",
+    colors: ["Red", "Pink"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "midnight-navy-tassel-kurti-dhoti",
+    slug: "midnight-navy-tassel-kurti-dhoti",
+    name: "Midnight Navy Tassel-Yoke Kurti & Dhoti Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/midnight-navy-tassel-kurti-dhoti-front.jpg",
+      "/images/products/new-collection/midnight-navy-tassel-kurti-dhoti-view-02.jpg",
+      "/images/products/new-collection/midnight-navy-tassel-kurti-dhoti-view-03.jpg",
+      "/images/products/new-collection/midnight-navy-tassel-kurti-dhoti-view-04.jpg",
+      "/images/products/new-collection/midnight-navy-tassel-kurti-dhoti-view-05.jpg",
+    ],
+    description:
+      "Deep navy blue silk tunic featuring an intricately woven silver-gold yoke with hanging metallic bead tassels, paired with comfortable pleated dhoti trousers.",
+    colors: ["Navy Blue"],
+    availability: "Available",
+    featured: false,
+    newArrival: true,
+  },
+  {
+    id: "white-gold-tassel-kurti-dhoti",
+    slug: "white-gold-tassel-kurti-dhoti",
+    name: "White & Gold Tassel-Yoke Kurti & Dhoti Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/white-gold-tassel-kurti-dhoti-front.jpg",
+      "/images/products/new-collection/white-gold-tassel-kurti-dhoti-view-02.jpg",
+      "/images/products/new-collection/white-gold-tassel-kurti-dhoti-view-03.jpg",
+      "/images/products/new-collection/white-gold-tassel-kurti-dhoti-view-04.jpg",
+      "/images/products/new-collection/white-gold-tassel-kurti-dhoti-view-05.jpg",
+    ],
+    description:
+      "Crisp white festive tunic adorned with an artisanal gold-woven bib yoke and tiered tassel accents, falling gently over matching white dhoti-style pants.",
+    colors: ["White", "Gold"],
+    availability: "Available",
+    featured: false,
+    newArrival: true,
+  },
+  {
+    id: "royal-navy-brocade-peplum-saree",
+    slug: "royal-navy-brocade-peplum-saree",
+    name: "Royal Navy Brocade Peplum Blouse & Dhoti Saree",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/royal-navy-brocade-peplum-saree-front.jpg",
+      "/images/products/new-collection/royal-navy-brocade-peplum-saree-view-02.jpg",
+      "/images/products/new-collection/royal-navy-brocade-peplum-saree-view-03.jpg",
+      "/images/products/new-collection/royal-navy-brocade-peplum-saree-view-04.jpg",
+      "/images/products/new-collection/royal-navy-brocade-peplum-saree-view-05.jpg",
+    ],
+    description:
+      "Opulent royal navy blue brocade angrakha-cut peplum jacket adorned with gold floral weaving, draped over an easy pre-stitched navy dhoti saree silhouette.",
+    colors: ["Navy Blue", "Gold"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "rani-pink-front-slit-kurta-set",
+    slug: "rani-pink-front-slit-kurta-set",
+    name: "Rani Pink Bandhani Front-Slit Kurta Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/rani-pink-front-slit-kurta-set-front.jpg",
+      "/images/products/new-collection/rani-pink-front-slit-kurta-set-view-02.jpg",
+      "/images/products/new-collection/rani-pink-front-slit-kurta-set-view-03.jpg",
+      "/images/products/new-collection/rani-pink-front-slit-kurta-set-view-04.jpg",
+      "/images/products/new-collection/rani-pink-front-slit-kurta-set-view-05.jpg",
+    ],
+    description:
+      "Vivid rani pink all-over bandhani printed long kurta with a contemporary front-center slit and golden threadwork neckline, paired with straight trousers and matching dupatta.",
+    colors: ["Rani Pink"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
+  {
+    id: "crimson-mirror-kurti-kalamkari-set",
+    slug: "crimson-mirror-kurti-kalamkari-set",
+    name: "Crimson Mirror-Work Kurti & Kalamkari Dupatta Set",
+    category: "ethnic-suit",
+    price: 1000,
+    images: [
+      "/images/products/new-collection/crimson-mirror-kurti-kalamkari-set-front.jpg",
+      "/images/products/new-collection/crimson-mirror-kurti-kalamkari-set-view-02.jpg",
+      "/images/products/new-collection/crimson-mirror-kurti-kalamkari-set-view-03.jpg",
+      "/images/products/new-collection/crimson-mirror-kurti-kalamkari-set-view-04.jpg",
+    ],
+    description:
+      "Festive crimson straight kurti highlighted with ornate mirror-work and lace inserts along the placket and hemline, finished with a statement multicolor Kalamkari digital print dupatta.",
+    colors: ["Red", "Multicolor"],
+    availability: "Available",
+    featured: true,
+    newArrival: true,
+  },
 
+  //   // LATEST NEW ARRIVALS (WESTERN WEAR & NAVRATRI FESTIVE)
+  // 
   // ---- Western Casuals & Co-ords ----
   {
     id: "layered-denim-pinafore-dress",
@@ -1575,349 +1833,7 @@ export const products: Product[] = [
     featured: true,
     newArrival: true,
   },
-   {
-    id: "bandhani_suit_01",
-    slug: "bandhani_suit_01",
-    name: "Bandhani Suit - 1",
-   category: "ethnic-suit",
-    price: 1200,
-    images: [ 
-      "/images/products/navratri/DJI_20260920134530_0170_D.jpg",
-       "/images/products/navratri/DJI_20260920134437_0167_D.jpg",
-       "/images/products/navratri/DJI_20260920134448_0168_D.jpg",
-       "/images/products/navratri/DJI_20260920134530_0170_D.jpg",
-       "/images/products/navratri/DJI_20260920134539_0172_D.jpg",
-       "/images/products/navratri/DJI_20260920134546_0173_D.jpg",
-       "/images/products/navratri/DJI_20260920134605_0174_D.jpg",
-       "/images/products/navratri/DJI_20260920134656_0176_D.jpg",
-       "/images/products/navratri/DJI_20260920134709_0178_D.jpg",
-
-       ],
-    description:
-      "",
-    colors: ["Blue","Pink"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "black_lehenga",
-    slug: "black_lehenga",
-    name: "Black Lehenga",
-    category: "ethnic-suit",
-    price: 2500,
-    images: [ 
-      "/images/navratri/DJI_20260920152826_0193_D.jpg",
-      "/images/navratri/DJI_20260920152834_0194_D.jpg",
-      "/images/navratri/DJI_20260920152850_0195_D.jpg",
-      "/images/navratri/DJI_20260920152907_0196_D.jpg",
-      "/images/navratri/DJI_20260920152936_0197_D.jpg",
-       ],
-    description:
-      "",
-    colors: ["Black"],
-    availability: "Available",
-    featured: true,
-  },
-   {
-    id: "blue_lehenga",
-    slug: "blue_lehenga",
-    name: "Blue Lehenga",
-    category: "ethnic-suit",
-    price: 2500,
-
-    images: [ 
-      "/images/navratri/DJI_20260920153214_0201_D.jpg",
-      "/images/navratri/DJI_20260920153222_0202_D.jpg",
-      "/images/navratri/DJI_20260920153230_0203_D.jpg",
-      "/images/navratri/DJI_20260920153234_0204_D.jpg",
-      "/images/navratri/DJI_20260920153250_0205_D.jpg",
-      "/images/navratri/DJI_20260920153254_0206_D.jpg",
-      ],
-    description:
-      "",
-    colors: ["Blue"],
-    availability: "Available",
-    featured: true,
-  },
-   {
-    id: "black_lehenga_02",
-    slug: "black_lehenga_02",
-    name: "Black Lehenga 02",
-    category: "ethnic-suit",
-    price: 2999,
-
-    images: [ 
-      "/images/navratri/DJI_20260920165531_0237_D.jpg",
-      "/images/navratri/DJI_20260920165535_0238_D.jpg",
-      "/images/navratri/DJI_20260920165540_0239_D.jpg",
-      "/images/navratri/DJI_20260920165546_0240_D.jpg",
-      "/images/navratri/DJI_20260920165549_0241_D.jpg",
-      "/images/navratri/DJI_20260920165607_0242_D.jpg",
-      "/images/navratri/DJI_20260920165610_0243_D.jpg",
-      "/images/navratri/DJI_20260920165622_0244_D.jpg",
-      "/images/navratri/DJI_20260920165629_0245_D.jpg",
- 
-    ],
-    description:
-      "",
-    colors: ["Black"],
-    availability: "Available",
-    featured: true,
-  },
-  
-  {
-    id: "Multi_color_lehenga-02",
-    slug: "Multi_color_lehenga-02",
-    name: "Multi Color Lehenga 02",
-    category: "ethnic-suit",
-    price: 2500,
-
-    images: [ 
-     "/images/navratri 2/DSC04207.jpg",
-     "/images/navratri 2/DSC04208.jpg",
-     "/images/navratri 2/DSC04209.jpg",
-     "/images/navratri 2/DSC04210.jpg",
-     "/images/navratri 2/DSC04211.jpg",
-     "/images/navratri 2/DSC04212.jpg",
-     "/images/navratri 2/DSC04213.jpg",
-     "/images/navratri 2/DSC04214.jpg",
-
-    ],
-    description:
-      "",
-    colors: ["Multi Color"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "Multi_color_lehenga-03",
-    slug: "Multi_color_lehenga-03",
-    name: "Multi Color Lehenga 03",
-    category: "ethnic-suit",
-    price: 2500,
-
-    images: [ 
-     "/images/navratri 2/DSC04215.jpg",
-     "/images/navratri 2/DSC04216.jpg",
-     "/images/navratri 2/DSC04217.jpg",
-     "/images/navratri 2/DSC04218.jpg",
-     "/images/navratri 2/DSC04219.jpg",
-     "/images/navratri 2/DSC04220.jpg",
-
-    ],
-    description:
-      "",
-    colors: ["Multi Color"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "purple_suit",
-    slug: "purple_suit",
-    name: "Purple Suit",
-    category: "ethnic-suit",
-    price: 2999,
-
-    images: [ 
-     "/images/navratri 2/DSC04221.jpg",
-     "/images/navratri 2/DSC04222.jpg",
-     "/images/navratri 2/DSC04223.jpg",
-     "/images/navratri 2/DSC04224.jpg",
-     "/images/navratri 2/DSC04225.jpg",
-     "/images/navratri 2/DSC04226.jpg",
-     "/images/navratri 2/DSC04227.jpg",
-     "/images/navratri 2/DSC04228.jpg",
-     "/images/navratri 2/DSC04229.jpg",
-
-    ],
-    description:
-      "",
-    colors: ["Purple"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "orange-suit",
-    slug: "orange-suit",
-    name: "Orange Suit",
-    category: "ethnic-suit",
-    price: 2999,
-
-    images: [ 
-     "/images/navratri 2/DSC04240.jpg",
-     "/images/navratri 2/DSC04241.jpg",
-     "/images/navratri 2/DSC04242.jpg",
-     "/images/navratri 2/DSC04243.jpg",
-     "/images/navratri 2/DSC04244.jpg",
-
-    ],
-    description:
-      "",
-    colors: ["Orange"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "pink_lehenga",
-    slug: "pink_lehenga",
-    name: "Pink Lehenga",
-    category: "ethnic-suit",
-    price: 2500,
-
-    images: [ 
-     "/images/navratri 2/DSC04245.jpg",
-     "/images/navratri 2/DSC04249.jpg",
-     "/images/navratri 2/DSC04250.jpg",
-     "/images/navratri 2/DSC04251.jpg"
-
-    ],
-    description:
-      "",
-    colors: ["Pink"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "purple_lehenga-02",
-    slug: "purple_lehenga-02",
-    name: "Purple Lehenga 02",
-    category: "ethnic-suit",
-    price: 2500,
-
-    images: [ 
-      "/images/navratri 2/DSC04252.jpg",
-      "/images/navratri 2/DSC04256.jpg",
-      "/images/navratri 2/DSC04258.jpg",
-      "/images/navratri 2/DSC04260.jpg",
-    ],
-    description:
-      "",
-    colors: ["Purple"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "white_lehenga",
-    slug: "white_lehenga",
-    name: "White Lehenga",
-    category: "ethnic-suit",
-    price: 2500,
-
-    images: [ 
-     "/images/navratri 2/DSC04269.jpg",
-     "/images/navratri 2/DSC04270.jpg",
-     "/images/navratri 2/DSC04271.jpg",
-    ],
-    description:
-      "",
-    colors: ["White"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "mixed-lehenga",
-    slug: "mixed-lehenga",
-    name: "Mixed Lehenga",
-    category: "ethnic-suit",
-    price: 2500,
-
-    images: [ 
-      "/images/navratri 2/DSC04272.jpg",
-      "/images/navratri 2/DSC04273.jpg",
-      "/images/navratri 2/DSC04274.jpg",
-      "/images/navratri 2/DSC04275.jpg",
-      "/images/navratri 2/DSC04276.jpg",
-     
-    ],
-    description:
-      "",
-    colors: ["Mixed"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "orange_suit",
-    slug: "orange_suit",
-    name: "Orange Suit",
-    category: "ethnic-suit",
-    price: 1200,
-
-    images: [ 
-     "/images/navratri 2/DSC04278.jpg",
-     "/images/navratri 2/DSC04281.jpg",
-     "/images/navratri 2/DSC04282.jpg",
-     "/images/navratri 2/DSC04283.jpg",
-
-    ],
-    description:
-      "",
-    colors: ["Orange"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "blue_suit",
-    slug: "blue_suit",
-    name: "Blue Suit",
-    category: "ethnic-suit",
-    price: 1200,
-
-    images: [ 
-     "/images/navratri 2/DSC04292.jpg",
-     "/images/navratri 2/DSC04295.jpg",
-     "/images/navratri 2/DSC04296.jpg"
-    ],
-    description:
-      "",
-    colors: ["Blue"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "white_lehenga_02",
-    slug: "white_lehenga_02",
-    name: "White Lehenga 02",
-    category: "ethnic-suit",
-    price: 2500,
-
-    images: [ 
-     "ktweb/public/images/navratri 2/DSC04300.jpg",
-     "ktweb/public/images/navratri 2/DSC04301.jpg",
-     "ktweb/public/images/navratri 2/DSC04302.jpg",
-     "ktweb/public/images/navratri 2/DSC04303.jpg",
-     "ktweb/public/images/navratri 2/DSC04304.jpg",
-     "ktweb/public/images/navratri 2/DSC04305.jpg",
-
-    ],
-    description:
-      "",
-    colors: ["White"],
-    availability: "Available",
-    featured: true,
-  },
-  {
-    id: "white_lehenga_03",
-    slug: "white_lehenga_03",
-    name: "White Lehenga 03",
-    category: "ethnic-suit",
-    price: 2500,
-
-    images: [ 
-     "/images/navratri 2/DSC04305.jpg",
-     "/images/navratri 2/DSC04306.jpg",
-     "/images/navratri 2/DSC04307.jpg",
-     "/images/navratri 2/DSC04308.jpg",
-     "/images/navratri 2/DSC04309.jpg",
-     "/images/navratri 2/DSC04311.jpg",
-    ],
-    description:
-      "",
-    colors: ["White"],
-    availability: "Available",
-    featured: true,
-  },
- 
-];
+   ];
 
 export function getAllProducts(): Product[] {
   return products;
