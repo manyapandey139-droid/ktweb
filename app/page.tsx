@@ -9,8 +9,12 @@ import WhySection from "@/components/WhySection";
 import InstagramSection from "@/components/InstagramSection";
 import WhatsAppCTASection from "@/components/WhatsAppCTASection";
 import DiwaliSaleBanner from "@/components/DiwaliSaleBanner";
+import PromoBanner from "@/components/PromoBanner";
+import IndependenceDayBanner from "@/components/IndependenceDayBanner";
+import IndependenceDaySection from "@/components/IndependenceDaySection";
 import { categories } from "@/data/categories";
 import { getFeaturedProducts, getNewArrivals } from "@/data/products";
+import { independenceDay } from "@/data/independenceDay";
 
 export default function Home() {
   const featured = getFeaturedProducts();
@@ -18,11 +22,16 @@ export default function Home() {
 
   return (
     <>
+      {/* 1. Main Brand Hero Banner */}
       <Hero />
 
-      {/* Diwali Festive Sale Banner with 10% OFF & Featured Ethnic Outfits */}
+      {/* 2. Diwali Grand Festive Sale Banner (10% OFF & Featured Festive Ethnic Wear) */}
       <DiwaliSaleBanner />
 
+      {/* 3. Independence Day Campaign Banner (active when isLive is true in data/independenceDay.ts) */}
+      {independenceDay.isLive && <IndependenceDayBanner />}
+
+      {/* 4. Category Grid */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
         <SectionHeading
           eyebrow="Shop By Category"
@@ -36,6 +45,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 5. Handpicked Featured Collection */}
       {featured.length > 0 && (
         <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24 bg-lavender-50/60">
           <div className="flex items-end justify-between mb-10 sm:mb-14">
@@ -55,6 +65,10 @@ export default function Home() {
         </section>
       )}
 
+      {/* 6. Mid-page Seasonal Promotional Banner */}
+      <PromoBanner />
+
+      {/* 7. New Arrivals */}
       {newArrivals.length > 0 && (
         <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
           <div className="flex items-end justify-between mb-10 sm:mb-14">
@@ -70,10 +84,22 @@ export default function Home() {
         </section>
       )}
 
+      {/* 8. Independence Day Section (when active) */}
+      {independenceDay.isLive && <IndependenceDaySection />}
+
+      {/* 9. Brand Story & Craftsmanship */}
       <AboutSection />
+
+      {/* 10. Editorial Tailoring Banner */}
       <EditorialBanner />
+
+      {/* 11. Why KT's Fashion Highlights */}
       <WhySection />
+
+      {/* 12. Social Proof & Instagram Feed */}
       <InstagramSection />
+
+      {/* 13. WhatsApp Instant Shopping CTA */}
       <WhatsAppCTASection />
     </>
   );

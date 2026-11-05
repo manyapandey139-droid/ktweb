@@ -609,7 +609,7 @@ export const products: Product[] = [
     slug: "pure-ivory-mirror-twirl-chaniya-choli",
     name: "Pure Ivory Mirror-Work Twirl Chaniya Choli",
     category: "ethnic-suit",
-    price: 3599,
+    price: 2700,
     images: [
       "/images/products/navratri/pure-ivory-mirror-chaniya-choli-front.jpg",
       "/images/products/navratri/pure-ivory-mirror-chaniya-choli-view-02.jpg",
