@@ -22,7 +22,7 @@ export const products: Product[] = [
     slug: "maroon-velvet-peplum-palazzo",
     name: "Maroon Velvet Floral Embroidered Peplum & Palazzo Set",
     category: "cord-set",
-    price: 1000,
+    price: 2200,
     images: [
       "/images/products/new-collection/maroon-velvet-peplum-palazzo-front.jpg",
       "/images/products/new-collection/maroon-velvet-peplum-palazzo-view-02.jpg",
@@ -42,7 +42,7 @@ export const products: Product[] = [
     slug: "blush-lavender-organza-lehenga",
     name: "Blush Lavender Organza Flared Lehenga Set",
     category: "cocktail-dress",
-    price: 1000,
+    price: 2999,
     images: [
       "/images/products/new-collection/blush-lavender-organza-lehenga-front.jpg",
       "/images/products/new-collection/blush-lavender-organza-lehenga-view-02.jpg",
@@ -62,7 +62,7 @@ export const products: Product[] = [
     slug: "crimson-drape-saree-gown",
     name: "Crimson Drape Saree Gown with Velvet Sequin Shrug",
     category: "gown",
-    price: 1000,
+    price: 2299,
     images: [
       "/images/products/new-collection/crimson-drape-saree-gown-front.jpg",
       "/images/products/new-collection/crimson-drape-saree-gown-view-02.jpg",
@@ -83,7 +83,7 @@ export const products: Product[] = [
     slug: "champagne-shimmer-tissue-twinning-set",
     name: "Champagne Shimmer Tissue Twinning Kurta & Lehenga Set",
     category: "mom-daughter",
-    price: 1000,
+    price: 2500,
     images: [
       "/images/products/new-collection/champagne-shimmer-tissue-twinning-set-front.jpg",
       "/images/products/new-collection/champagne-shimmer-tissue-twinning-set-view-02.jpg",
@@ -103,7 +103,7 @@ export const products: Product[] = [
     slug: "lemon-sunshine-embroidered-cape-set",
     name: "Lemon Sunshine Embroidered Cape & Dhoti Set",
     category: "cord-set",
-    price: 1000,
+    price: 2999,
     images: [
       "/images/products/new-collection/lemon-sunshine-embroidered-cape-set-front.jpg",
       "/images/products/new-collection/lemon-sunshine-embroidered-cape-set-view-02.jpg",
@@ -121,7 +121,7 @@ export const products: Product[] = [
     slug: "pastel-rose-embroidered-cape-set",
     name: "Pastel Rose Embroidered Cape & Dhoti Set",
     category: "cord-set",
-    price: 1000,
+    price: 2999,
     images: [
       "/images/products/new-collection/pastel-rose-embroidered-cape-set-front.jpg",
       "/images/products/new-collection/pastel-rose-embroidered-cape-set-view-02.jpg",
@@ -140,7 +140,7 @@ export const products: Product[] = [
     slug: "ivory-silk-kurti-salwar",
     name: "Ivory Silk Short Kurti & Salwar Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1999,
     images: [
       "/images/products/new-collection/ivory-silk-kurti-salwar-front.jpg",
       "/images/products/new-collection/ivory-silk-kurti-salwar-view-02.jpg",
@@ -160,7 +160,7 @@ export const products: Product[] = [
     slug: "rose-carmine-silk-kurti-salwar",
     name: "Rose Carmine Silk Short Kurti & Salwar Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1800,
     images: [
       "/images/products/new-collection/rose-carmine-silk-kurti-salwar-front.jpg",
       "/images/products/new-collection/rose-carmine-silk-kurti-salwar-view-02.jpg",
@@ -180,7 +180,7 @@ export const products: Product[] = [
     slug: "midnight-navy-tassel-kurti-dhoti",
     name: "Midnight Navy Tassel-Yoke Kurti & Dhoti Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1800,
     images: [
       "/images/products/new-collection/midnight-navy-tassel-kurti-dhoti-front.jpg",
       "/images/products/new-collection/midnight-navy-tassel-kurti-dhoti-view-02.jpg",
@@ -200,7 +200,7 @@ export const products: Product[] = [
     slug: "white-gold-tassel-kurti-dhoti",
     name: "White & Gold Tassel-Yoke Kurti & Dhoti Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1800,
     images: [
       "/images/products/new-collection/white-gold-tassel-kurti-dhoti-front.jpg",
       "/images/products/new-collection/white-gold-tassel-kurti-dhoti-view-02.jpg",
@@ -220,7 +220,7 @@ export const products: Product[] = [
     slug: "royal-navy-brocade-peplum-saree",
     name: "Royal Navy Brocade Peplum Blouse & Dhoti Saree",
     category: "ethnic-suit",
-    price: 1000,
+    price: 2500,
     images: [
       "/images/products/new-collection/royal-navy-brocade-peplum-saree-front.jpg",
       "/images/products/new-collection/royal-navy-brocade-peplum-saree-view-02.jpg",
@@ -240,7 +240,7 @@ export const products: Product[] = [
     slug: "rani-pink-front-slit-kurta-set",
     name: "Rani Pink Bandhani Front-Slit Kurta Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1800,
     images: [
       "/images/products/new-collection/rani-pink-front-slit-kurta-set-front.jpg",
       "/images/products/new-collection/rani-pink-front-slit-kurta-set-view-02.jpg",
@@ -260,7 +260,7 @@ export const products: Product[] = [
     slug: "crimson-mirror-kurti-kalamkari-set",
     name: "Crimson Mirror-Work Kurti & Kalamkari Dupatta Set",
     category: "ethnic-suit",
-    price: 1000,
+    price: 1500,
     images: [
       "/images/products/new-collection/crimson-mirror-kurti-kalamkari-set-front.jpg",
       "/images/products/new-collection/crimson-mirror-kurti-kalamkari-set-view-02.jpg",
@@ -416,7 +416,7 @@ export const products: Product[] = [
     slug: "sky-blue-bandhani-kutch-chaniya-choli",
     name: "Sky Blue Bandhani Kutch Embroidered Chaniya Choli",
     category: "ethnic-suit",
-    price: 3499,
+    price: 2500,
     images: [
       "/images/products/navratri/sky-blue-bandhani-kutch-chaniya-choli-front.jpg",
       "/images/products/navratri/sky-blue-bandhani-kutch-chaniya-choli-view-02.jpg",
@@ -436,7 +436,7 @@ export const products: Product[] = [
     slug: "coral-red-kutch-embroidered-chaniya-choli",
     name: "Coral Red Kutchi Embroidered Chaniya Choli",
     category: "ethnic-suit",
-    price: 3499,
+    price: 2500,
     images: [
       "/images/products/navratri/coral-red-kutch-chaniya-choli-front.jpg",
       "/images/products/navratri/coral-red-kutch-chaniya-choli-view-02.jpg",
@@ -495,7 +495,7 @@ export const products: Product[] = [
     slug: "rani-pink-bandhani-flared-navratri-lehenga",
     name: "Rani Pink Bandhani Flared Navratri Lehenga",
     category: "ethnic-suit",
-    price: 3299,
+    price: 2499,
     images: [
       "/images/products/navratri/rani-pink-bandhani-navratri-lehenga-front.jpg",
       "/images/products/navratri/rani-pink-bandhani-navratri-lehenga-view-02.jpg",
@@ -514,7 +514,7 @@ export const products: Product[] = [
     slug: "royal-purple-bandhani-twirl-lehenga",
     name: "Royal Purple Bandhani Twirl Lehenga Set",
     category: "ethnic-suit",
-    price: 3499,
+    price: 2999,
     images: [
       "/images/products/navratri/royal-purple-bandhani-twirl-lehenga-front.jpg",
       "/images/products/navratri/royal-purple-bandhani-twirl-lehenga-view-02.jpg",
@@ -534,7 +534,7 @@ export const products: Product[] = [
     slug: "ivory-rani-kutch-chaniya-choli",
     name: "Ivory & Rani Pink Kutchi Embroidered Chaniya Choli",
     category: "ethnic-suit",
-    price: 3699,
+    price: 2500,
     images: [
       "/images/products/navratri/ivory-rani-kutch-chaniya-choli-front.jpg",
       "/images/products/navratri/ivory-rani-kutch-chaniya-choli-view-02.jpg",
@@ -552,7 +552,7 @@ export const products: Product[] = [
     slug: "vermilion-kutch-embroidered-chaniya-choli",
     name: "Festive Vermilion Kutchi Embroidered Chaniya Choli",
     category: "ethnic-suit",
-    price: 3499,
+    price: 2499,
     images: [
       "/images/products/navratri/vermilion-kutch-chaniya-choli-front.jpg",
       "/images/products/navratri/vermilion-kutch-chaniya-choli-view-02.jpg",
@@ -628,7 +628,7 @@ export const products: Product[] = [
     slug: "gold-motif-ivory-festive-lehenga",
     name: "Gold Motif Ivory Festive Lehenga Set",
     category: "ethnic-suit",
-    price: 3299,
+    price: 2999,
     images: [
       "/images/products/navratri/gold-motif-ivory-lehenga-front.jpg",
       "/images/products/navratri/gold-motif-ivory-lehenga-view-02.jpg",
@@ -1664,7 +1664,7 @@ export const products: Product[] = [
     slug: "royal-blue-bandhani-flare-kurti",
     name: "Royal Blue Bandhani Festive Kurti Set",
     category: "ethnic-suit",
-    price: 1899,
+    price: 1200,
     images: [
       "/images/products/navratri/royal-blue-bandhani-flare-kurti-front.jpg",
       "/images/products/navratri/royal-blue-bandhani-flare-kurti-view-02.jpg",
@@ -1683,7 +1683,7 @@ export const products: Product[] = [
     slug: "rani-pink-bandhani-flare-kurti",
     name: "Rani Pink Bandhani Festive Kurti Set",
     category: "ethnic-suit",
-    price: 1899,
+    price: 1200,
     images: [
       "/images/products/navratri/rani-pink-bandhani-flare-kurti-front.jpg",
       "/images/products/navratri/rani-pink-bandhani-flare-kurti-view-02.jpg",
@@ -1702,7 +1702,7 @@ export const products: Product[] = [
     slug: "onyx-gold-mirror-chaniya-choli",
     name: "Onyx Gold Mirror-Work Chaniya Choli",
     category: "ethnic-suit",
-    price: 3499,
+    price: 2500,
     images: [
       "/images/products/navratri/onyx-gold-mirror-chaniya-choli-front.jpg",
       "/images/products/navratri/onyx-gold-mirror-chaniya-choli-view-02.jpg",
@@ -1722,7 +1722,7 @@ export const products: Product[] = [
     slug: "peacock-teal-mirror-chaniya-choli",
     name: "Peacock Teal Mirror-Work Chaniya Choli",
     category: "ethnic-suit",
-    price: 3499,
+    price: 2500,
     images: [
       "/images/products/navratri/peacock-teal-mirror-chaniya-choli-front.jpg",
       "/images/products/navratri/peacock-teal-mirror-chaniya-choli-view-02.jpg",
@@ -1742,7 +1742,7 @@ export const products: Product[] = [
     slug: "crimson-black-bandhani-chaniya-choli",
     name: "Crimson & Black Bandhani Chaniya Choli",
     category: "ethnic-suit",
-    price: 3299,
+    price: 2999,
     images: [
       "/images/products/navratri/crimson-black-bandhani-chaniya-choli-front.jpg",
       "/images/products/navratri/crimson-black-bandhani-chaniya-choli-view-02.jpg",
@@ -1762,7 +1762,7 @@ export const products: Product[] = [
     slug: "sunshine-yellow-navratri-chaniya-choli",
     name: "Sunshine Yellow & Navy Navratri Chaniya Choli",
     category: "ethnic-suit",
-    price: 3699,
+    price: 2999,
     images: [
       "/images/products/navratri/sunshine-yellow-navratri-chaniya-choli-front.jpg",
       "/images/products/navratri/sunshine-yellow-navratri-chaniya-choli-view-02.jpg",
