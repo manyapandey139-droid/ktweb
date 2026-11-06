@@ -1,5 +1,10 @@
 import Link from "next/link";
-import Hero from "@/components/Hero";
+import HeroSlider from "@/components/HeroSlider";
+import QuickCategoryStrip from "@/components/QuickCategoryStrip";
+import DiwaliSpotlight from "@/components/DiwaliSpotlight";
+import HomeTrendingTabs from "@/components/HomeTrendingTabs";
+import OccasionMosaic from "@/components/OccasionMosaic";
+import BrandTrustBar from "@/components/BrandTrustBar";
 import SectionHeading from "@/components/SectionHeading";
 import CategoryCard from "@/components/CategoryCard";
 import ProductGrid from "@/components/ProductGrid";
@@ -8,84 +13,63 @@ import EditorialBanner from "@/components/EditorialBanner";
 import WhySection from "@/components/WhySection";
 import InstagramSection from "@/components/InstagramSection";
 import WhatsAppCTASection from "@/components/WhatsAppCTASection";
-import DiwaliSaleBanner from "@/components/DiwaliSaleBanner";
-import PromoBanner from "@/components/PromoBanner";
-import IndependenceDayBanner from "@/components/IndependenceDayBanner";
-import IndependenceDaySection from "@/components/IndependenceDaySection";
 import { categories } from "@/data/categories";
-import { getFeaturedProducts, getNewArrivals } from "@/data/products";
-import { independenceDay } from "@/data/independenceDay";
+import { getAllProducts, getNewArrivals } from "@/data/products";
 
 export default function Home() {
-  const featured = getFeaturedProducts();
+  const allProducts = getAllProducts();
   const newArrivals = getNewArrivals();
 
   return (
-    <>
-      {/* 1. Main Brand Hero Banner */}
-      <Hero />
+    <main className="min-h-screen bg-white">
+      {/* 1. Main Auto-Sliding Hero Carousel (Amazon/Myntra Style: Diwali 10% OFF + Feeling Beautiful Luxury Edit + Western Co-Ords + Kutchi Twirls) */}
+      <HeroSlider />
 
-      {/* 2. Diwali Grand Festive Sale Banner (10% OFF & Featured Festive Ethnic Wear) */}
-      <DiwaliSaleBanner />
+      {/* 2. Quick-Shop Story / Category Bubbles (Fast Mobile Browsing) */}
+      <QuickCategoryStrip />
 
-      {/* 3. Independence Day Campaign Banner (active when isLive is true in data/independenceDay.ts) */}
-      {independenceDay.isLive && <IndependenceDayBanner />}
+      {/* 3. Luxury Brand Trust & Perks Bar */}
+      <BrandTrustBar />
 
-      {/* 4. Category Grid */}
+      {/* 4. Diwali Grand Festive Spotlight (Curated Ethnic Outfits at 10% OFF + Coupon Copy) */}
+      <DiwaliSpotlight />
+
+      {/* 5. Interactive Tabbed Trending Showcase (Editor's Choice, Festive, Western, Under ₹2000) */}
+      <HomeTrendingTabs allProducts={allProducts} />
+
+      {/* 6. Shop By Occasion Editorial Mosaic (Festive Royale, Brunch Co-Ords, Evening Drapes, Twinning) */}
+      <OccasionMosaic />
+
+      {/* 7. Comprehensive Category Grid */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
         <SectionHeading
           eyebrow="Shop By Category"
-          title="Find Your Style"
-          description="From ethnic elegance to contemporary chic, explore collections crafted for every occasion."
+          title="Find Your Signature Style"
+          description="From authentic Indian ethnic elegance to contemporary Western chic, explore tailored collections for every woman."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
           {categories.map((category) => (
             <CategoryCard key={category.slug} category={category} />
           ))}
         </div>
       </section>
 
-      {/* 5. Handpicked Featured Collection */}
-      {featured.length > 0 && (
-        <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24 bg-lavender-50/60">
-          <div className="flex items-end justify-between mb-10 sm:mb-14">
-            <SectionHeading
-              eyebrow="Featured Collection"
-              title="Handpicked For You"
-              align="left"
-            />
-            <Link
-              href="/shop"
-              className="hidden sm:inline text-xs tracking-widest uppercase text-purple-700 font-medium hover:underline shrink-0"
-            >
-              View All
-            </Link>
-          </div>
-          <ProductGrid products={featured} />
-        </section>
-      )}
-
-      {/* 6. Mid-page Seasonal Promotional Banner */}
-      <PromoBanner />
-
-      {/* 7. New Arrivals */}
+      {/* 8. Just In / New Arrivals Showcase */}
       {newArrivals.length > 0 && (
-        <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
+        <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24 bg-[#faf8f5] rounded-3xl my-8">
           <div className="flex items-end justify-between mb-10 sm:mb-14">
-            <SectionHeading eyebrow="Just In" title="New Arrivals" align="left" />
+            <SectionHeading eyebrow="Fresh Off The Loom" title="New Arrivals" align="left" />
             <Link
               href="/shop?sort=newest"
-              className="hidden sm:inline text-xs tracking-widest uppercase text-purple-700 font-medium hover:underline shrink-0"
+              className="hidden sm:inline-flex items-center gap-1.5 text-xs tracking-widest uppercase text-purple-800 font-bold hover:underline shrink-0"
             >
-              View All
+              <span>View All New In</span>
+              <span>→</span>
             </Link>
           </div>
-          <ProductGrid products={newArrivals} />
+          <ProductGrid products={newArrivals.slice(0, 8)} />
         </section>
       )}
-
-      {/* 8. Independence Day Section (when active) */}
-      {independenceDay.isLive && <IndependenceDaySection />}
 
       {/* 9. Brand Story & Craftsmanship */}
       <AboutSection />
@@ -99,8 +83,8 @@ export default function Home() {
       {/* 12. Social Proof & Instagram Feed */}
       <InstagramSection />
 
-      {/* 13. WhatsApp Instant Shopping CTA */}
+      {/* 13. VIP WhatsApp Concierge CTA */}
       <WhatsAppCTASection />
-    </>
+    </main>
   );
 }
