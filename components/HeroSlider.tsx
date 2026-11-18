@@ -34,46 +34,46 @@ interface HeroSlide {
 
 const slides: HeroSlide[] = [
   {
-    id: "diwali-sale",
-    tabLabel: "🪔 Diwali Sale 10% OFF",
-    badge: "Special Diwali Festive Offer",
-    badgeIcon: "🪔",
-    title: "Diwali Grand",
-    titleHighlight: "Festive Sale",
-    tagline: "FLAT 10% OFF ON ALL ETHNIC WEAR",
+    id: "festive-drop-2026",
+    tabLabel: "✨ Festive Drop 2026",
+    badge: "Just Arrived • Winter Festive Edit",
+    badgeIcon: "✨",
+    title: "Festive",
+    titleHighlight: "New Drop",
+    tagline: "HANDCRAFTED KALAMKARI & VELVET PALAZZO ENSEMBLES",
     description:
-      "Illuminate your celebrations in royal handcrafted brocade sarees, velvet peplum sets & silk twirls. Use code DIWALI10 at checkout or directly on WhatsApp.",
-    primaryCtaText: "Shop Diwali Collection",
-    primaryCtaHref: "/ethnic-suit",
-    secondaryCtaText: "Claim 10% OFF On WhatsApp",
+      "Step into regal elegance with our latest drop: handcrafted Mustard Yellow Kalamkari suits, exquisite Peacock Teal & Wine embroidered palazzo sets, and Lucknowi Chikankari cutwork kurtis.",
+    primaryCtaText: "Shop New Arrivals",
+    primaryCtaHref: "/shop?sort=newest",
+    secondaryCtaText: "Order On WhatsApp",
     isWhatsAppSecondary: true,
     theme: "diwali",
-    mainImage: "/images/products/new-collection/royal-navy-brocade-peplum-saree-front.jpg",
-    mainImageAlt: "Royal Navy Brocade Peplum Blouse & Dhoti Saree",
+    mainImage: "/images/products/festive-collection/mustard-yellow-kalamkari-suit-set-front.jpg",
+    mainImageAlt: "Mustard Yellow Kalamkari Embroidered Suit Set",
     previewProducts: [
       {
-        name: "Royal Navy Brocade Dhoti Saree",
-        image: "/images/products/new-collection/royal-navy-brocade-peplum-saree-front.jpg",
+        name: "Mustard Kalamkari Suit",
+        image: "/images/products/festive-collection/mustard-yellow-kalamkari-suit-set-front.jpg",
+        originalPrice: 2800,
+        salePrice: 2800,
+        slug: "mustard-yellow-kalamkari-suit-set",
+        badge: "NEW IN",
+      },
+      {
+        name: "Peacock Teal Palazzo Set",
+        image: "/images/products/festive-collection/peacock-teal-embroidered-crop-palazzo-set-front.jpg",
         originalPrice: 2500,
-        salePrice: 2250,
-        slug: "royal-navy-brocade-peplum-saree",
-        badge: "FLAT 10% OFF",
+        salePrice: 2500,
+        slug: "peacock-teal-embroidered-crop-palazzo-set",
+        badge: "FESTIVE HIT",
       },
       {
-        name: "Maroon Velvet Peplum Palazzo",
-        image: "/images/products/new-collection/maroon-velvet-peplum-palazzo-front.jpg",
-        originalPrice: 2200,
-        salePrice: 1980,
-        slug: "maroon-velvet-peplum-palazzo",
-        badge: "BESTSELLER",
-      },
-      {
-        name: "Crimson Drape Saree Gown",
-        image: "/images/products/new-collection/crimson-drape-saree-gown-front.jpg",
-        originalPrice: 2299,
-        salePrice: 2069,
-        slug: "crimson-drape-saree-gown",
-        badge: "10% OFF",
+        name: "Wine Velvet Palazzo Set",
+        image: "/images/products/festive-collection/wine-velvet-embroidered-crop-palazzo-set-front.jpg",
+        originalPrice: 2500,
+        salePrice: 2500,
+        slug: "wine-velvet-embroidered-crop-palazzo-set",
+        badge: "HANDWORK",
       },
     ],
   },
@@ -363,7 +363,7 @@ export default function HeroSlider() {
 
                     {isDiwali && (
                       <span className="text-amber-300 text-[11px] font-bold tracking-widest hidden sm:inline">
-                        USE CODE: <u>DIWALI10</u>
+                        EXCLUSIVE 2026 DROP
                       </span>
                     )}
                   </div>
@@ -510,7 +510,7 @@ export default function HeroSlider() {
                     {/* Overlay Tag */}
                     <div className="absolute bottom-4 inset-x-4 text-white">
                       <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-amber-400 text-purple-950 mb-1">
-                        {isDiwali ? "10% OFF APPLIED" : "FEATURED"}
+                        {isDiwali ? "NEW ARRIVAL" : "FEATURED"}
                       </span>
                       <h3 className="font-serif-display text-base font-semibold leading-tight line-clamp-1">
                         {slide.mainImageAlt}
@@ -564,7 +564,7 @@ export default function HeroSlider() {
                       {/* Instant WhatsApp Order Pill */}
                       <a
                         href={`https://wa.me/${brandConfig.whatsappNumber}?text=${encodeURIComponent(
-                          `Hi KT's Fashion, I'm interested in ordering from the ${slide.title} collection with 10% discount!`
+                          `Hi KT's Fashion, I'm interested in ordering from the ${slide.title} collection!`
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"

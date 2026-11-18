@@ -15,7 +15,7 @@ type TabKey = "featured" | "festive" | "western" | "budget";
 
 const tabs: { key: TabKey; label: string; icon: string }[] = [
   { key: "featured", label: "Editor's Choice", icon: "✨" },
-  { key: "festive", label: "Diwali & Festive Edit", icon: "🪔" },
+  { key: "festive", label: "Festive & Wedding Edit", icon: "👑" },
   { key: "western", label: "Western & Co-Ords", icon: "👖" },
   { key: "budget", label: "Under ₹2,000", icon: "🏷️" },
 ];
@@ -32,6 +32,7 @@ export default function HomeTrendingTabs({ allProducts }: Props) {
           .filter(
             (p) =>
               p.category === "ethnic-suit" ||
+              p.images[0].includes("festive-collection") ||
               p.images[0].includes("new-collection") ||
               p.images[0].includes("navratri") ||
               p.name.toLowerCase().includes("saree") ||
@@ -104,8 +105,6 @@ export default function HomeTrendingTabs({ allProducts }: Props) {
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
         {filtered.map((product) => {
           const saved = isSaved(product.id);
-          const isFestive = activeTab === "festive" || product.images[0].includes("new-collection");
-          const discountedPrice = isFestive ? Math.round(product.price * 0.9) : null;
 
           return (
             <div
@@ -127,11 +126,6 @@ export default function HomeTrendingTabs({ allProducts }: Props) {
 
                 {/* Badge Pills */}
                 <div className="absolute top-2.5 left-2.5 flex flex-col gap-1 z-10">
-                  {discountedPrice && (
-                    <span className="rounded-lg bg-amber-500 text-purple-950 font-black text-[9px] sm:text-[10px] tracking-wider uppercase px-2 py-0.5 shadow-sm">
-                      10% OFF
-                    </span>
-                  )}
                   {product.newArrival && (
                     <span className="rounded-lg bg-purple-700 text-white font-bold text-[9px] sm:text-[10px] tracking-wider uppercase px-2 py-0.5 shadow-sm">
                       New
@@ -177,20 +171,9 @@ export default function HomeTrendingTabs({ allProducts }: Props) {
                   </Link>
 
                   <div className="mt-2 flex items-baseline gap-2">
-                    {discountedPrice ? (
-                      <>
-                        <span className="text-sm sm:text-base font-extrabold text-purple-800">
-                          ₹{discountedPrice.toLocaleString("en-IN")}
-                        </span>
-                        <span className="text-xs text-gray-400 line-through">
-                          ₹{product.price.toLocaleString("en-IN")}
-                        </span>
-                      </>
-                    ) : (
-                      <span className="text-sm sm:text-base font-extrabold text-purple-800">
-                        ₹{product.price.toLocaleString("en-IN")}
-                      </span>
-                    )}
+                    <span className="text-sm sm:text-base font-extrabold text-purple-800">
+                      ₹{product.price.toLocaleString("en-IN")}
+                    </span>
                   </div>
                 </div>
 

@@ -2,7 +2,7 @@ import { products } from "@/data/products";
 import { Product } from "@/types/product";
 
 export const diwaliSale = {
-  isLive: true,
+  isLive: false,
   discountText: "FLAT 10% OFF",
   couponCode: "DIWALI10",
   title: "Diwali Grand Festive Sale",

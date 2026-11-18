@@ -1,7 +1,7 @@
 import { brandConfig } from "@/lib/brandConfig";
 
 const items = [
-  "🪔 DIWALI FESTIVE SALE • FLAT 10% OFF ON ALL ETHNIC WEAR",
+  "✨ NEW ARRIVALS DROP 2026 • HANDCRAFTED ETHNIC SUITS & DESIGNER CO-ORDS",
   brandConfig.shippingMessage,
   brandConfig.codMessage,
   brandConfig.returnPolicy,

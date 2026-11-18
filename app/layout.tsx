@@ -8,7 +8,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import DiwaliSalePopup from "@/components/DiwaliSalePopup";
 import { WishlistProvider } from "@/contexts/WishlistContext";
 
 const playfair = Playfair_Display({
@@ -72,8 +71,6 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <FloatingWhatsApp />
-          {/* Active Diwali Grand Festive Sale Popup with Curated Ethnic Wear & 10% OFF */}
-          <DiwaliSalePopup />
         </WishlistProvider>
         <Analytics />
       </body>

@@ -11,10 +11,10 @@ interface QuickItem {
 
 const quickCategories: QuickItem[] = [
   {
-    title: "Diwali 10% OFF",
-    badge: "10% OFF",
-    href: "/ethnic-suit",
-    image: "/images/products/new-collection/royal-navy-brocade-peplum-saree-front.jpg",
+    title: "New Arrivals",
+    badge: "Just In",
+    href: "/shop?sort=newest",
+    image: "/images/products/festive-collection/mustard-yellow-kalamkari-suit-set-front.jpg",
     isSpecial: true,
   },
   {

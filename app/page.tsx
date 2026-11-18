@@ -1,7 +1,6 @@
 import Link from "next/link";
 import HeroSlider from "@/components/HeroSlider";
 import QuickCategoryStrip from "@/components/QuickCategoryStrip";
-import DiwaliSpotlight from "@/components/DiwaliSpotlight";
 import HomeTrendingTabs from "@/components/HomeTrendingTabs";
 import OccasionMosaic from "@/components/OccasionMosaic";
 import BrandTrustBar from "@/components/BrandTrustBar";
@@ -22,7 +21,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white">
-      {/* 1. Main Auto-Sliding Hero Carousel (Amazon/Myntra Style: Diwali 10% OFF + Feeling Beautiful Luxury Edit + Western Co-Ords + Kutchi Twirls) */}
+      {/* 1. Main Auto-Sliding Hero Carousel (Amazon/Myntra Style: Winter Festive Drop 2026 + Feeling Beautiful Luxury Edit + Western Co-Ords + Kutchi Twirls) */}
       <HeroSlider />
 
       {/* 2. Quick-Shop Story / Category Bubbles (Fast Mobile Browsing) */}
@@ -31,10 +30,7 @@ export default function Home() {
       {/* 3. Luxury Brand Trust & Perks Bar */}
       <BrandTrustBar />
 
-      {/* 4. Diwali Grand Festive Spotlight (Curated Ethnic Outfits at 10% OFF + Coupon Copy) */}
-      <DiwaliSpotlight />
-
-      {/* 5. Interactive Tabbed Trending Showcase (Editor's Choice, Festive, Western, Under ₹2000) */}
+      {/* 4. Interactive Tabbed Trending Showcase (Editor's Choice, Festive, Western, Under ₹2000) */}
       <HomeTrendingTabs allProducts={allProducts} />
 
       {/* 6. Shop By Occasion Editorial Mosaic (Festive Royale, Brunch Co-Ords, Evening Drapes, Twinning) */}
